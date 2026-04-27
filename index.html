@@ -1,69 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AntraKomanda</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <script src="JS/script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AntraKomanda</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <script src="JS/script.js" defer></script>
 </head>
+
 <body>
-    <header>
-    </header>
-    <!-- Div 2 start -->
-     <!-- Div 2 end -->
-    <!-- Div 3 start -->
-     <!-- Div 3 end -->
+  <!-- Lauryno -->
+  <!-- Header Start -->
+  <header></header>
+  <!-- Header end -->
+  <div class="whatAreYourGoals"></div>
+  <!-- Div 1 end -->
+  <!-- Div 2 start -->
+  <!-- Div 2 end -->
+  <!-- Div 3 start -->
+  <!-- Div 3 end -->
 
-         <!-- Matas --- START -->
-        <section class="contact_section">
-  <div class="container">
-    
-    <div class="contact_header">
-      <div class="title_area">
-        <h1>Get in touch with us</h1>
+  <!-- Matas --- START -->
+  <section class="contact_section">
+    <div class="container">
+      <div class="contact_header">
+        <div class="title_area">
+          <h1>Get in touch with us</h1>
+        </div>
+        <div class="info_area">
+          <p>
+            Simply fill in your Email in our contact form or get in touch with
+            us by our email –
+            <a href="mailto:itsupportgroup@gmail.com">itsupportgroup@gmail.com</a>, and one of our experts will contact
+            you shortly.
+          </p>
+          <p>
+            This could be the beginning of a wonderful collaboration and the
+            easiest way to acquire a highly-experienced team.
+          </p>
+          <a href="#" class="btn_download">DOWNLOAD THE BRIEF <span>&#10515;</span></a>
+        </div>
       </div>
-      <div class="info_area">
-        <p>Simply fill in your Email in our contact form or get in touch with us by our email – <a href="mailto:itsupportgroup@gmail.com">itsupportgroup@gmail.com</a>, and one of our experts will contact you shortly.</p>
-        <p>This could be the beginning of a wonderful collaboration and the easiest way to acquire a highly-experienced team.</p>
-        <a href="#" class="btn_download">DOWNLOAD THE BRIEF <span>&#10515;</span></a>
-      </div>
+
+      <form action="#" method="POST" enctype="multipart/form-data" class="contact_form">
+        <div class="form_grid">
+          <div class="form_column">
+            <div class="input_group">
+              <input type="text" name="fullname" placeholder="Enter your Full Name" required />
+            </div>
+            <div class="input_group">
+              <input type="email" name="email" placeholder="Enter your Email" required />
+            </div>
+            <div class="input_group">
+              <input type="tel" name="phone" placeholder="Enter your Phone Number" />
+            </div>
+          </div>
+
+          <div class="form_column">
+            <div class="input_group">
+              <input type="text" name="project" placeholder="Describe your project" />
+            </div>
+            <div class="input_group_file_upload">
+              <label for="file_input">
+                <span>Upload file (max file size is 30 MB)</span>
+                <span class="plus_icon">+</span>
+              </label>
+              <input type="file" id="file_input" name="attachment" />
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn_submit">
+          SUBMIT <span>&#8599;</span>
+        </button>
+      </form>
     </div>
-
-    <form action="#" method="POST" enctype="multipart/form-data" class="contact_form">
-      <div class="form_grid">
-        
-        <div class="form_column">
-          <div class="input_group">
-            <input type="text" name="fullname" placeholder="Enter your Full Name" required>
-          </div>
-          <div class="input_group">
-            <input type="email" name="email" placeholder="Enter your Email" required>
-          </div>
-          <div class="input_group">
-            <input type="tel" name="phone" placeholder="Enter your Phone Number">
-          </div>
-        </div>
-
-        <div class="form_column">
-          <div class="input_group">
-            <input type="text" name="project" placeholder="Describe your project">
-          </div>
-          <div class="input_group_file_upload">
-            <label for="file_input">
-              <span>Upload file (max file size is 30 MB)</span>
-              <span class="plus_icon">+</span>
-            </label>
-            <input type="file" id="file_input" name="attachment">
-          </div>
-        </div>
-      </div>
-
-      <button type="submit" class="btn_submit">SUBMIT <span>&#8599;</span></button>
-    </form>
-
-  </div>
-</section>
-         <!-- Matas --- END -->
+  </section>
+  <!-- Matas --- END -->
 </body>
+
 </html>
