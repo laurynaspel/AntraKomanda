@@ -2,129 +2,182 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif, Arial;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background-color: #f5f5f5;
-  padding: 50px 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-top: 50px;
 }
 
+/*Div 5 START*/
+
 .contact_section {
-  max-width: 1100px;
-  margin: 0 auto;
+  width: 1860px;
+  height: 1004px;
   background-color: #5d59f0;
   color: #ffffff;
-  padding: 60px;
-  border-radius: 40px;
+  border-radius: 60px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .contact_header {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 60px;
+  align-items: flex-start;
+  margin-bottom: 80px;
 }
 
 .title_area h1 {
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 1.1;
-  max-width: 400px;
+  font-size: 5rem; 
+  font-weight: 500;
+  line-height: 1;
+  max-width: 600px;
 }
 
 .info_area {
-  max-width: 450px;
+  max-width: 500px;
+  padding-top: 20px;
 }
 
 .info_area p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   opacity: 0.9;
-}
-
-.info_area a {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.btn_download {
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  margin-top: 10px;
-  transition: background 0.3s;
-}
-
-.btn_download:hover {
-  background: rgba(255, 255, 255, 0.1);
 }
 
 .form_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 40px;
+  gap: 100px;
+  margin-bottom: 60px;
 }
 
 .input_group, .input_group_file_upload {
-  margin-bottom: 25px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 40px;
+  padding-bottom: 15px;
 }
 
-.contact_form input[type="text"],
-.contact_form input[type="email"],
-.contact_form input[type="tel"] {
+.input_group input {
   width: 100%;
   background: transparent;
   border: none;
-  color: #ffffff;
-  font-size: 1.1rem;
+  color: #fff;
+  font-size: 1.4rem;
   outline: none;
 }
 
-.contact_form input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.input_group_file_upload label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.input_group_file_upload input[type="file"] {
-  display: none;
-}
-
-.plus_icon {
-  font-size: 1.5rem;
+.input_group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .btn_submit {
-  background-color: #ffffff;
+  background: #ffffff;
   color: #5d59f0;
   border: none;
-  padding: 12px 35px;
-  border-radius: 8px;
+  padding: 20px 50px;
+  border-radius: 12px;
   font-weight: bold;
+  font-size: 1.2rem;
   cursor: pointer;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: transform 0.2s;
 }
 
-.btn_submit:hover {
-  transform: translateY(-2px);
-  background-color: #f0f0f0;
+/*Div 5 END*/
+/* Div Footer START*/
+
+footer {
+  width: 1860px;
+  height: 564px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 100px;
+  padding-top: 40px;
+  border-top: 1px solid gray;
 }
+
+.column_title {
+  text-transform: lowercase;
+  color: #888;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+footer a, footer p {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.office_location {
+  margin-bottom: 20px;
+}
+
+.office_location a {
+  color: #5d59f0;
+  font-weight: bold;
+}
+
+.social_icons {
+  margin: 15px 0;
+}
+
+.social_icons img {
+  width: 24px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+._contact_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 298px;
+  width: 395px;
+}
+
+.footer_contact_btn {
+  background-color: #2b2bd3;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.copyright_block {
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+  margin-top: 40px;
+  color: gray;
+}
+
+.copyright_block p {
+  font-size: 0.75rem;
+}
+
+/*Div Footer END*/
