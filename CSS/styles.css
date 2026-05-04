@@ -1,6 +1,5 @@
 *{
   padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 :root{
@@ -13,6 +12,7 @@
 body{
   width: 1920px;
   height: 9097px;
+  margin: 0 auto;
 }
 header{
   background-image: url(../img/annie-spratt-QckxruozjRg-unsplash.jpg);
@@ -28,12 +28,41 @@ header{
   height: 919px;
 }
 
+
+
+
+
+
+
+
+
+
+.container-selection-divs{
+  width: 1920px;
+  display: flex;
+}
+
+.slections{
+
+border-left: 1px solid #2E2BD0;
+}
+
 .selected-divs{
   width: 1116px;
   height: 459px;
+  border-radius: 70px;
+  border: 1px solid rgba(47, 53, 63, 0.5);
+  
+}
+.selected-team-text{
+font-family: 'Neue Machina';
+font-style: normal;
+line-height: 39px;
 }
 
-
+.selected-communication, .selected-solution, .selected-quality{
+  display: none;
+}
 
 /*div 2 end*/
 /*Gediminas end*/
