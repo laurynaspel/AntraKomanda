@@ -21,3 +21,19 @@ header{
   background-position: top;
   background-size: cover;
 }
+/*Gediminas start*/
+/*div 2 start*/
+.container-div-2{
+  width: 1920px;
+  height: 919px;
+}
+
+.selected-divs{
+  width: 1116px;
+  height: 459px;
+}
+
+
+
+/*div 2 end*/
+/*Gediminas end*/
