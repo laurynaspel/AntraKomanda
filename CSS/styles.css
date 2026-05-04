@@ -1,191 +1,130 @@
-*{
-  padding: 0;
-  margin: 0;
+* {
   box-sizing: border-box;
-}
-:root{
-  --main-blue: #2E2BD0;
-  --main-white: #ffffff;
-  --main-gray: #2F353F;
-  --main-purple: #9695E7;
-  --main-light: #CBCAF3;
-}
-body{
-  width: 1920px;
-  height: 9097px;
-}
-header{
-  background-image: url(../img/annie-spratt-QckxruozjRg-unsplash.jpg);
-  width: 1920px;
-  height: 975px;
-  background-position: top;
-  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif, Arial;
 }
 
-/* <!-- Div 3 start --> */
-.container {
-  max-width: 1200px;
+body {
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+}
+
+.contact_section {
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 60px;
+  background-color: #5d59f0;
+  color: #ffffff;
+  padding: 60px;
+  border-radius: 40px;
 }
 
-.used_technologies_section {
-  padding: 100px 0 80px;
-  background-color: #fafafa;
-}
-
-.used_technologies_section .section_header {
+.contact_header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 80px;
+  gap: 40px;
   margin-bottom: 60px;
 }
 
-.used_technologies_section .section_header h2 {
-  font-size: 42px;
+.title_area h1 {
+  font-size: 3.5rem;
   font-weight: 400;
-  color: var(--main-gray);
-  min-width: 220px;
-  line-height: 1.2;
+  line-height: 1.1;
+  max-width: 400px;
 }
 
-.used_technologies_section .section_header p {
-  font-size: 18px;
-  color: var(--main-gray);
-  line-height: 1.7;
-  max-width: 500px;
-  padding-top: 8px;
+.info_area {
+  max-width: 450px;
 }
 
-.tech_timeline {
-  overflow-x: auto;
+.info_area p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.info_area a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn_download {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn_download:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.input_group, .input_group_file_upload {
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-bottom: 10px;
 }
 
-.tech_track {
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form input[type="tel"] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.contact_form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input_group_file_upload label {
   display: flex;
-  align-items: flex-start;
-  position: relative;
-  gap: 0;
-  min-width: max-content;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.tech_track::before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  right: 6px;
-  height: 1px;
-  background-color: #d0d0d0;
-  z-index: 0;
+.input_group_file_upload input[type="file"] {
+  display: none;
 }
 
-.tech_item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1;
-  min-width: 120px;
-  position: relative;
-  padding-top: 0;
+.plus_icon {
+  font-size: 1.5rem;
 }
 
-.tech_dot {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: #d0d0d0;
-  border: 2px solid #d0d0d0;
-  margin-bottom: 16px;
-  position: relative;
-  z-index: 1;
-  flex-shrink: 0;
-}
-
-.tech_item.active .tech_dot {
-  background-color: var(--main-blue);
-  border-color: var(--main-blue);
-}
-
-.tech_icon_box {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #615FDC;
-  border-radius: 6px;
+.btn_submit {
+  background-color: #ffffff;
+  color: #5d59f0;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  background: #fff;
-  order: 3;
+  gap: 10px;
+  transition: transform 0.2s;
 }
 
-.tech_icon_box img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(27%) sepia(100%) hue-rotate(240deg) brightness(1.1);
+.btn_submit:hover {
+  transform: translateY(-2px);
+  background-color: #f0f0f0;
 }
-
-.tech_label {
-  font-size: 17px;
-  color: var(--main-gray);
-  line-height: 1.8;
-  max-width: 130px;
-  order: 2;
-  margin-bottom: 16px;
-}
-
-.industries_section {
-  padding: 100px 0;
-  background-color: #fff;
-}
-
-.industries_section h2 {
-  font-size: 42px;
-  font-weight: 400;
-  color: var(--main-gray);
-  margin-bottom: 60px;
-}
-
-.industries_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
-.industry_card {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.industry_icon {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.industry_card h3 {
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--main-gray);
-  border-bottom: 1px solid #000000;
-  padding-bottom: 16px;
-}
-
-.industry_card p {
-  font-size: 13px;
-  color: var(--main-gray);
-  line-height: 1.75;
-  opacity: 0.8;
-}
-
-.industry_icon img {
-  filter: brightness(0) saturate(100%) invert(27%) sepia(100%) hue-rotate(240deg) brightness(1.1);
-}
-/* <!-- Div 3 end --> */
