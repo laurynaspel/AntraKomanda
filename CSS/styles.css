@@ -27,12 +27,17 @@ header {
   height: 975px;
   background-position: top;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar {
   display: flex;
-  width: 1920px;
+  width: 1860px;
   height: 119px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--main-white);
 }
 
 /* logo start */
@@ -74,6 +79,57 @@ header {
 }
 
 /* logo done */
+nav {
+  width: 1145px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav>li>img {
+  width: 20px;
+  height: 20px;
+}
+
+.nav_btn {
+  display: flex;
+  width: 254px;
+  height: 59px;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--main-blue);
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_btn img {
+  width: 24px;
+  height: 24px;
+}
+
+ul,
+li {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+  color: var(--main-white, #FFF);
+  font-size: 24px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+.nav_hr {
+  width: 1px;
+  background-color: var(--main-white, #FFF);
+  height: 119px;
+  border: none;
+}
+
 /* header end */
 /* div 1 start */
 /* div 1 end */
