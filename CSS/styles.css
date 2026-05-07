@@ -1,26 +1,85 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-:root{
+
+:root {
   --main-blue: #2E2BD0;
   --main-white: #ffffff;
   --main-gray: #2F353F;
   --main-purple: #9695E7;
   --main-light: #CBCAF3;
 }
-body{
+
+body {
   width: 1920px;
   height: 9097px;
 }
-header{
-  background-image: url(../img/annie-spratt-QckxruozjRg-unsplash.jpg);
+
+
+/* lauryno start */
+/* header start */
+header {
+  background-image: url(../IMG/HEADER/annie-spratt-QckxruozjRg-unsplash.jpg);
   width: 1920px;
   height: 975px;
   background-position: top;
   background-size: cover;
 }
+
+.navbar {
+  display: flex;
+  width: 1920px;
+  height: 119px;
+}
+
+/* logo start */
+.logo {
+  width: 204px;
+  height: 63px;
+  color: var(--main-white);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.logo_text {
+  width: 137px;
+  height: 48px;
+  color: var(--main-white, #FFF);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.logo_img {
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+
+.header_vector1 {
+  width: 57.766px;
+  height: 42.361px;
+  margin-left: 1.71px;
+  margin-top: 2.5px;
+}
+
+.header_vector2 {
+  width: 14.698px;
+  height: 15.25px;
+}
+
+/* logo done */
+/* header end */
+/* div 1 start */
+/* div 1 end */
+/* lauryno end */
+
+
 
 /* <!-- Div 3 start --> */
 .container {
@@ -188,4 +247,5 @@ header{
 .industry_icon img {
   filter: brightness(0) saturate(100%) invert(27%) sepia(100%) hue-rotate(240deg) brightness(1.1);
 }
+
 /* <!-- Div 3 end --> */
