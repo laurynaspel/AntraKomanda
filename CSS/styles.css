@@ -27,11 +27,9 @@ header {
   height: 975px;
   background-position: top;
   background-size: cover;
-}
-
-  /* display: flex;
+  display: flex;
   justify-content: center;
-} */
+} 
 
 .navbar {
   display: flex;
