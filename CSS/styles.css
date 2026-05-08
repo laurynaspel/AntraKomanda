@@ -2,7 +2,28 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Neue Machina';
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/FONTS/NeueMachina-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/FONTS/NeueMachina-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/FONTS/NeueMachina-Ultrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
 }
 
 :root {
@@ -38,6 +59,14 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--main-white);
+  font-weight: 300;
+}
+
+.main_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 /* logo start */
@@ -130,9 +159,47 @@ a {
   border: none;
 }
 
+/* nav end */
+.title {
+  display: flex;
+  color: var(--main-white, #FFF);
+  font-family: "Neue Machina";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  width: 876px;
+  height: 65px;
+  background-color: var(--main-blue);
+  align-items: center;
+  margin-left: 90px;
+}
+
+.header_btn {
+  display: flex;
+  color: var(--main-white);
+  border: 1px solid var(--main-white);
+  font-weight: 400;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 90px;
+}
+
+.header_btn p {
+  width: 160px;
+  font-size: 40px;
+  text-align: center;
+}
+
 /* header end */
+
 /* div 1 start */
+
 /* div 1 end */
+
 /* lauryno end */
 
 
