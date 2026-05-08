@@ -22,20 +22,25 @@ header{
   background-size: cover;
 }
 /*Gediminas start*/
-/*div 2 start*/
+/*div 2 --- "Why choose us?"" section --- start*/
 .container-div-2{
   width: 1920px;
   height: 919px;
+  padding-left: 150px;
 }
-
-
-
-
-
-
-
-
-
+.container-div-2-h2{
+  font-size: 60px;
+  color: #2F353F;
+}
+.container-div-2-p{
+  margin-top: 100px;
+  font-size: 24px;
+  color: #2F353FB2;
+}
+.container-div-text{
+  height: 108px;
+  width: 726px;
+}
 
 .container-selection-divs{
   width: 1920px;
@@ -43,26 +48,58 @@ header{
 }
 
 .slections{
-
-border-left: 1px solid #2E2BD0;
+  margin-top: 150px;
+  height: 503px;
+  width: 305px;
+  border-left: 2.5px solid #2F353F4D;
+}
+.slections-option-1{
+  color: #2E2BD0;
+  padding-left: 52.5px;
+  margin-left: -2.5px;
+  border-left: 2.5px solid #2E2BD0;
+  font-size: 32px;
+  font-weight: 400;
+}
+.slections-option-2, .slections-option-3, .slections-option-4{
+  margin-top: 100px;
+  margin-left: 50px;
+  font-size: 32px;
+  color: #2F353F4D;
+  font-weight: 400;
 }
 
 .selected-divs{
+  margin-top: 150px;
+  margin-left: 200px;
+  padding: 0px 50px;
   width: 1116px;
   height: 459px;
   border-radius: 70px;
   border: 1px solid rgba(47, 53, 63, 0.5);
-  
-}
-.selected-team-text{
-font-family: 'Neue Machina';
-font-style: normal;
-line-height: 39px;
 }
 
-.selected-communication, .selected-solution, .selected-quality{
+.selected-div h3{
+  font-size: 40px;
+  color: #2E2BD0;
+  font-weight: 400;
+  font-family: 'Neue Machina';
+}
+
+.selected-div-text p{
+  font-size: 30px;
+  color:#2F353FB2;
+  font-family: 'Neue Machina';
+}
+
+.selected-div{
+  width: 1016px;
+  height: 359px;
+  line-height: 39px;
+}
+
+.selected-div-2, .selected-div-3 ,.selected-div-4{
   display: none;
 }
-
-/*div 2 end*/
+/*div 2 --- "Why choose us?"" section --- end*/
 /*Gediminas end*/
