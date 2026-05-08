@@ -163,15 +163,15 @@ a {
 
 .slections{
   margin-top: 150px;
-  height: 503px;
+  height: 502.5px;
   width: 305px;
-  border-left: 2.5px solid #2F353F4D;
+  border-left: 3px solid #2F353F4D;
 }
 .slections-option-1{
   color: #2E2BD0;
   padding-left: 52.5px;
-  margin-left: -2.5px;
-  border-left: 2.5px solid #2E2BD0;
+  margin-left: -4px;
+  border-left: 5px solid #2E2BD0;
   font-size: 32px;
   font-weight: 400;
 }

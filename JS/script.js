@@ -27,8 +27,8 @@ function clearForDiv2() {
 
 div2Option1.addEventListener('click', () => {
   clearForDiv2();
-  div2Option1.style.borderLeft = '2.5px solid #2E2BD0';
-  div2Option1.style.marginLeft = '-2.5px';
+  div2Option1.style.borderLeft = '5px solid #2E2BD0';
+  div2Option1.style.marginLeft = '-4px';
   div2Option1.style.paddingLeft = '52.5px';
   div2Option1.style.color = '#2E2BD0';
   div2Div1.style.display = 'block';
@@ -39,8 +39,8 @@ div2Option1.addEventListener('click', () => {
 
 div2Option2.addEventListener('click', () => {
   clearForDiv2();
-  div2Option2.style.borderLeft = '2.5px solid #2E2BD0';
-  div2Option2.style.marginLeft = '-2.5px';
+  div2Option2.style.borderLeft = '5px solid #2E2BD0';
+  div2Option2.style.marginLeft = '-4px';
   div2Option2.style.paddingLeft = '52.5px';
   div2Option2.style.color = '#2E2BD0';
   div2Div1.style.display = 'none';
@@ -51,8 +51,8 @@ div2Option2.addEventListener('click', () => {
 
 div2Option3.addEventListener('click', () => {
   clearForDiv2();
-  div2Option3.style.borderLeft = '2.5px solid #2E2BD0';
-  div2Option3.style.marginLeft = '-2.5px';
+  div2Option3.style.borderLeft = '5px solid #2E2BD0';
+  div2Option3.style.marginLeft = '-4px';
   div2Option3.style.paddingLeft = '52.5px';
   div2Option3.style.color = '#2E2BD0';
   div2Div1.style.display = 'none';
@@ -63,8 +63,8 @@ div2Option3.addEventListener('click', () => {
 
 div2Option4.addEventListener('click', () => {
   clearForDiv2();
-  div2Option4.style.borderLeft = '2.5px solid #2E2BD0';
-  div2Option4.style.marginLeft = '-2.5px';
+  div2Option4.style.borderLeft = '5px solid #2E2BD0';
+  div2Option4.style.marginLeft = '-4px';
   div2Option4.style.paddingLeft = '52.5px';
   div2Option4.style.color = '#2E2BD0';
   div2Div1.style.display = 'none';
