@@ -69,6 +69,20 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/FONTS/Gilroy-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/FONTS/Gilroy-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 :root {
   --main-blue: #2E2BD0;
   --main-white: #ffffff;
@@ -86,6 +100,8 @@ body {
 /* lauryno start */
 /* header start */
 header {
+  margin-left: 10px;
+  margin-top: 10px;
   background-image: url(../IMG/HEADER/annie-spratt-QckxruozjRg-unsplash.jpg);
   width: 1920px;
   height: 975px;
@@ -142,7 +158,7 @@ header {
   width: 57.766px;
   height: 42.361px;
   margin-left: 1.71px;
-  margin-top: 2.5px;
+  margin-top: 3px;
 }
 
 .header_vector2 {
@@ -152,7 +168,7 @@ header {
 
 /* logo done */
 nav {
-  width: 1145px;
+  width: 1188px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -172,6 +188,8 @@ nav>p {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 4px;
+  margin-right: 14px;
 }
 
 .nav_btn {
@@ -210,6 +228,11 @@ li {
 
 }
 
+ul {
+  width: 618px;
+  justify-content: space-evenly;
+}
+
 a {
   text-decoration: none;
   color: var(--main-white);
@@ -220,16 +243,18 @@ a {
   background-color: var(--main-white, #FFF);
   height: 119px;
   border: none;
+  margin-left: -5px;
 }
 
 /* nav end */
 .title {
   display: flex;
   width: 876px;
-  height: 65px;
+  height: 63px;
   background-color: var(--main-blue);
   align-items: center;
-  margin-left: 90px;
+  margin-left: 120px;
+  margin-top: 198px;
 }
 
 .title h1 {
@@ -238,21 +263,21 @@ a {
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
-  line-height: 130%;
+  line-height: 150%;
   /* 65px */
 }
 
 .header_btn {
   display: flex;
   color: var(--main-white);
-  border: 1px solid var(--main-white);
+  border: 2px solid var(--main-white);
   width: 280px;
   height: 280px;
   border-radius: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
-  margin-left: 90px;
+  margin-bottom: 52px;
+  margin-left: 120px;
 }
 
 .header_btn p {
