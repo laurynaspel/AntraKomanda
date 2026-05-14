@@ -1,26 +1,439 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Neue Machina';
+  font-weight: 400;
 }
-:root{
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/FONTS/NeueMachina-Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/FONTS/NeueMachina-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/FONTS/NeueMachina-Ultrabold.otf') format('opentype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/FONTS/TTNorms-Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/FONTS/TTNorms-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/FONTS/TTNorms-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/FONTS/TTNorms-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/FONTS/TTNorms-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/FONTS/TTNorms-Black.otf') format('opentype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/FONTS/TTNorms-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/FONTS/Gilroy-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/FONTS/Gilroy-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
   --main-blue: #2E2BD0;
   --main-white: #ffffff;
   --main-gray: #2F353F;
   --main-purple: #9695E7;
   --main-light: #CBCAF3;
 }
-body{
+
+body {
   width: 1920px;
   height: 9097px;
+  position: relative;
+  background-color: #f5f5f5;
 }
-header{
-  background-image: url(../img/annie-spratt-QckxruozjRg-unsplash.jpg);
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    url('../IMG/BG_Noise.png') repeat;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  z-index: 9999;
+}
+
+/* lauryno start */
+/* header start */
+header {
+  margin-left: 10px;
+  margin-top: 10px;
+  position: relative;
   width: 1920px;
   height: 975px;
+  background-image: url(../IMG/HEADER/Img.png);
   background-position: top;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
+
+header::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(47, 53, 63, 0.40);
+  z-index: 1;
+}
+
+header>* {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+  width: 1860px;
+  height: 119px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--main-white);
+  font-weight: 300;
+}
+
+.main_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+/* logo start */
+.logo {
+  width: 204px;
+  height: 63px;
+  color: var(--main-white);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.logo_text {
+  width: 137px;
+  height: 48px;
+  color: var(--main-white, #FFF);
+  font-family: "TT Norms";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.logo_img {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.header_vector1 {
+  width: 57.766px;
+  height: 42.361px;
+  margin-left: 1.71px;
+  margin-top: 3px;
+}
+
+.header_vector2 {
+  width: 14.698px;
+  height: 15.25px;
+}
+
+/* logo done */
+nav {
+  width: 1188px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Neue Machina";
+}
+
+nav>li>img {
+  width: 20px;
+  height: 20px;
+}
+
+nav>p {
+  color: var(--main-white, #FFF);
+  font-family: "Neue Machina";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  margin-right: 14px;
+}
+
+.nav_btn {
+  display: flex;
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  border: none;
+  border-radius: 10px;
+  height: 59px;
+  width: 254px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.nav_btn img {
+  width: 24px;
+  height: 24px;
+}
+
+
+ul,
+li {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+  color: var(--main-white, #FFF);
+  font-family: "Neue Machina";
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: lowercase;
+  list-style: none;
+  font-weight: 300;
+
+}
+
+ul {
+  width: 618px;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+.nav_hr {
+  width: 1px;
+  background-color: var(--main-white, #FFF);
+  height: 119px;
+  border: none;
+  margin-left: -5px;
+}
+
+/* nav end */
+.title {
+  display: flex;
+  width: 876px;
+  height: 63px;
+  background-color: var(--main-blue);
+  align-items: center;
+  margin-left: 120px;
+  margin-top: 198px;
+}
+
+.title h1 {
+  color: var(--main-white, #FFF);
+  font-family: "Neue Machina";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%;
+  padding-bottom: 10px;
+}
+
+.header_btn {
+  display: flex;
+  color: var(--main-white);
+  border: 3px solid var(--main-white);
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 52px;
+  margin-left: 120px;
+}
+
+.header_btn p {
+  color: var(--main-white, #FFF);
+  text-align: center;
+  font-family: "Neue Machina";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 39px */
+  text-transform: uppercase;
+}
+
+/* header end */
+
+/* div 1 start */
+.whatAreOurGoals {
+  margin-top: 200px;
+  display: flex;
+  width: 1920px;
+  padding: 0 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.whatAreOurGoals h1 {
+  color: #2F353F;
+  font-family: "Neue Machina";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.goals_grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 500px);
+  width: 1620px;
+  height: 1498px;
+}
+
+.goals {
+  border: 1px solid #95989D;
+  border-radius: 70px;
+  overflow: hidden;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goals h3 {
+  color: #2E2BD0;
+  font-family: "Neue Machina";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -15px;
+}
+
+.goals h2 {
+  color: #2F353F;
+  font-family: "Neue Machina";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.goals p {
+  color: rgba(47, 53, 63, 0.70);
+  font-family: 'Gilroy';
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%;
+  /* 45px */
+}
+
+.goals_div1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.goals_div2 {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.goals_div3 {
+  grid-area: 1 / 5 / 2 / 7;
+  object-fit: cover;
+  display: block;
+  padding: 0;
+}
+
+.goals_div4 {
+  grid-area: 2 / 1 / 3 / 4;
+  object-fit: cover;
+  display: block;
+  padding: 0;
+}
+
+.goals_div5 {
+  grid-area: 2 / 4 / 3 / 7;
+}
+
+.goals_div6 {
+  grid-area: 3 / 1 / 5 / 5;
+}
+
+.goals_div7 {
+  grid-area: 3 / 5 / -1 / -1;
+  object-fit: cover;
+  display: block;
+  padding: 0;
+}
+
+/* div 1 end */
+
+/* lauryno end */
+
+
 
 /* <!-- Div 3 start --> */
 *  {
@@ -245,4 +658,5 @@ body {
   opacity: 0.55;
   max-width: 320px;
 }
+
 /* <!-- Div 3 end --> */
