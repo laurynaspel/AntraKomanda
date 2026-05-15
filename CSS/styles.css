@@ -217,22 +217,22 @@ a {
 /*Gediminas start*/
 /*div 2 --- "Why choose us?"" section --- start*/
 .container-div-2{
-  margin-top: 15.625rem;
+  margin-top: 15.625rem; /* change */
   width: 100vw;
-  height: 85vh;
-  padding-left: 12.5rem;
+  height: 100vh;
+  padding-left: 7.81vw;
 }
 .container-div-2-h2{
   font-family: 'Neue Machina';
-  font-size: 5rem;
+  font-size: 3.12vw;
   color: #2F353F;
 }
 .container-div-2-p{
   font-family: 'Gilroy';
-  margin-top: 8rem;
-  font-size: 1.97rem;
+  margin-top: 9.9vh;
+  font-size: 1.233vw;
   color: #2F353FB2;
-  line-height: 150%;
+  line-height: 3.6vh;
   letter-spacing: 0%;
 }
 .container-div-text{
@@ -246,64 +246,63 @@ a {
 }
 
 .slections{
-  margin-top: 15rem;
+  margin-top: 18.3vh;
   height: 51vh;
   width: 18.4vw;
   border-left: 3px solid #2F353F4D;
 }
 .slections-option-1{
   color: #2E2BD0;
-  padding-top: 0.1rem;
-  padding-left: 3.8rem;
-  margin-left: -0.25rem;
+  padding-top: 0.3vh;
+  padding-left: 2.4vw;
+  margin-left: -0.2vw;
   border-left: 5px solid #2E2BD0;
-  font-size: 3rem;
+  font-size: 1.68vw;
   font-weight: 400;
 }
 .slections-option-2, .slections-option-3, .slections-option-4{
-  margin-top: 6.691rem;
-  padding-left: 2.8rem;
-  font-size: 32px;
+  margin-top: 10.7vh;
+  padding-left: 2.4vw;
+  font-size: 1.68vw;
   color: #2F353F4D;
   font-weight: 400;
   font-family: 'Neue Machina';
 }
 
 .selected-divs{
-  margin-top: 9.375rem;
-  margin-left: 12.5rem;
-  padding: 0rem 3.125rem;
-  width: 1116px;
-  height: 459px;
-  border-radius: 70px;
+  margin-top: 18.2vh;
+  margin-left: 7.8vw;
+  padding: 0 1.99vw;
+  width: 58.2vw;
+  height: 46.8vh;
+  border-radius: 7vh;
   border: 1px solid rgba(47, 53, 63, 0.5);
 }
 
 .selected-div h3{
-  line-height: 150%;
-  size: 30px;
-  margin-left: -0.1rem;
-  margin-top: 1.99rem;
-  font-size: 40px;
+  margin-left: 0.6vw;
+  margin-top: 3.8vh;
   color: #2E2BD0;
   font-weight: 400;
   font-family: 'Neue Machina';
+  font-size: 2.09vw;
 }
 
-.selected-div-text p{
+.selected-div p{
   font-weight: 400;
-  margin-left: -0.3rem;
-  margin-top: 2.9375rem;
-  font-size: 34px;
+  margin-left: 0.6vw;
+  margin-top: 4.7vh;
   color:#2F353FB2;
-  font-family: 'TT Norms';
+  font-family: 'Gilroy';
   letter-spacing: 0%;
+  font-size: 1.564vw;
+  line-height: 4.45vh;
+  word-spacing: -0.05vw;
 }
 
 .selected-div{
-  width: 1016px;
-  height: 359px;
-  line-height: 39px;
+  width: 58.2vw;
+  height: 46.9vh;
 }
 
 .selected-div-2, .selected-div-3 ,.selected-div-4{
