@@ -92,8 +92,8 @@
 }
 
 body {
-  width: 1920px;
-  height: 9097px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -220,44 +220,44 @@ a {
   margin-top: 15.625rem;
   width: 100vw;
   height: 85vh;
-  padding-left: 9.375rem;
+  padding-left: 12.5rem;
 }
 .container-div-2-h2{
   font-family: 'Neue Machina';
-  font-size: 60px;
+  font-size: 5rem;
   color: #2F353F;
 }
 .container-div-2-p{
-  font-family: 'TT Norms';
-  margin-top: 6.25rem;
-  font-size: 24px;
+  font-family: 'Gilroy';
+  margin-top: 8rem;
+  font-size: 1.97rem;
   color: #2F353FB2;
   line-height: 150%;
   letter-spacing: 0%;
 }
 .container-div-text{
-  height: 108px;
-  width: 726px;
+  height: 8.3vh;
+  width: 50vw;
 }
 
 .container-selection-divs{
-  width: 1920px;
+  width: 100vw;
   display: flex;
 }
 
 .slections{
-  margin-top: 9.375rem;
-  height: 502.5px;
-  width: 305px;
+  margin-top: 15rem;
+  height: 51vh;
+  width: 18.4vw;
   border-left: 3px solid #2F353F4D;
 }
 .slections-option-1{
   color: #2E2BD0;
   padding-top: 0.1rem;
-  padding-left: 2.8rem;
+  padding-left: 3.8rem;
   margin-left: -0.25rem;
   border-left: 5px solid #2E2BD0;
-  font-size: 32px;
+  font-size: 3rem;
   font-weight: 400;
 }
 .slections-option-2, .slections-option-3, .slections-option-4{
