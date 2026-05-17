@@ -435,25 +435,9 @@ a {
 
 
 
+
+
 /* <!-- Div 3 start --> */
-*  {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  background: #f5f5f5;
-  color: #1a1a2e;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 .container {
   max-width: 1320px;
@@ -563,6 +547,7 @@ body {
   max-width: 82px;
   margin-bottom: 0;
   transition: font-size 0.2s ease, opacity 0.2s ease;
+  font-family: 'TT Norms', sans-serif;
 }
 
 .tech-item.active .tech-label {
@@ -648,6 +633,7 @@ body {
   border-bottom: 1px solid #1a1a2e;
   padding-bottom: 18px;
   margin-bottom: 22px;
+  font-family: 'TT Norms', sans-serif;
 }
 
 .industry-card p {
@@ -656,7 +642,6 @@ body {
   line-height: 1.9;
   color: #1a1a2e;
   opacity: 0.55;
-  max-width: 320px;
+  font-family: 'Gilroy', sans-serif;
 }
-
 /* <!-- Div 3 end --> */
