@@ -14,28 +14,28 @@ const div2Div4 = document.querySelector('.selected-div-4');
 
 function clearForDiv2() {
   div2Option1.style.borderLeft = 'none';
-  div2Option1.style.marginLeft = '0rem';
-  div2Option1.style.paddingLeft = '3.8rem';
+  div2Option1.style.marginLeft = '0vw';
+  div2Option1.style.paddingLeft = '2.4vw';
   div2Option1.style.color = '#2F353F4D';
   div2Option2.style.borderLeft = 'none';
-  div2Option2.style.marginLeft = '0rem';
-  div2Option2.style.paddingLeft = '3.8rem';
+  div2Option2.style.marginLeft = '0vw';
+  div2Option2.style.paddingLeft = '2.4vw';
   div2Option2.style.color = '#2F353F4D';
   div2Option3.style.borderLeft = 'none';
-  div2Option3.style.marginLeft = '0rem';
-  div2Option3.style.paddingLeft = '3.8rem';
+  div2Option3.style.marginLeft = '0vw';
+  div2Option3.style.paddingLeft = '2.4vw';
   div2Option3.style.color = '#2F353F4D';
   div2Option4.style.borderLeft = 'none';
-  div2Option4.style.marginLeft = '0rem';
-  div2Option4.style.paddingLeft = '3.8rem';
+  div2Option4.style.marginLeft = '0vw';
+  div2Option4.style.paddingLeft = '2.4vw';
   div2Option4.style.color = '#2F353F4D';
 }
 
 div2Option1.addEventListener('click', () => {
   clearForDiv2();
   div2Option1.style.borderLeft = '5px solid #2E2BD0';
-  div2Option1.style.marginLeft = '-0.25rem';
-  div2Option1.style.paddingLeft = '3.8rem';
+  div2Option1.style.marginLeft = '-0.2vw';
+  div2Option1.style.paddingLeft = '2.4vw';
   div2Option1.style.color = '#2E2BD0';
   div2Div1.style.display = 'block';
   div2Div2.style.display = 'none';
@@ -46,8 +46,8 @@ div2Option1.addEventListener('click', () => {
 div2Option2.addEventListener('click', () => {
   clearForDiv2();
   div2Option2.style.borderLeft = '5px solid #2E2BD0';
-  div2Option2.style.marginLeft = '-0.25rem';
-  div2Option2.style.paddingLeft = '3.8rem';
+  div2Option2.style.marginLeft = '-0.2vw';
+  div2Option2.style.paddingLeft = '2.4vw';
   div2Option2.style.color = '#2E2BD0';
   div2Div1.style.display = 'none';
   div2Div2.style.display = 'block';
@@ -58,8 +58,8 @@ div2Option2.addEventListener('click', () => {
 div2Option3.addEventListener('click', () => {
   clearForDiv2();
   div2Option3.style.borderLeft = '5px solid #2E2BD0';
-  div2Option3.style.marginLeft = '-0.25rem';
-  div2Option3.style.paddingLeft = '3.8rem';
+  div2Option3.style.marginLeft = '-0.2vw';
+  div2Option3.style.paddingLeft = '2.4vw';
   div2Option3.style.color = '#2E2BD0';
   div2Div1.style.display = 'none';
   div2Div2.style.display = 'none';
@@ -70,8 +70,8 @@ div2Option3.addEventListener('click', () => {
 div2Option4.addEventListener('click', () => {
   clearForDiv2();
   div2Option4.style.borderLeft = '5px solid #2E2BD0';
-  div2Option4.style.marginLeft = '-0.25rem';
-  div2Option4.style.paddingLeft = '3.8rem';
+  div2Option4.style.marginLeft = '-0.2vw';
+  div2Option4.style.paddingLeft = '2.4vw';
   div2Option4.style.color = '#2E2BD0';
   div2Div1.style.display = 'none';
   div2Div2.style.display = 'none';
@@ -79,4 +79,4 @@ div2Option4.addEventListener('click', () => {
   div2Div4.style.display = 'block';
 });
 //div 2 --- "Why choose us?"" section --- end
-//gediminas end
+//gediminas end 
