@@ -81,6 +81,28 @@
   src: url('/FONTS/Gilroy-ExtraBold.otf') format('opentype');
   font-weight: 800;
   font-style: normal;
+  font-family: 'Neue Machina';
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/FONTS/NeueMachina-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/FONTS/NeueMachina-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/FONTS/NeueMachina-Ultrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
 }
 
 :root {
@@ -94,10 +116,14 @@
 body {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  position: relative;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-body::before {
+/* body::before {
   content: '';
   position: fixed;
   inset: 0;
@@ -106,30 +132,53 @@ body::before {
   opacity: 0.05;
   mix-blend-mode: multiply;
   z-index: 9999;
-}
+} */
 
 /* lauryno start */
 /* header start */
 header {
-  margin-left: 10px;
-  margin-top: 10px;
   position: relative;
-  width: 1920px;
-  height: 975px;
+  width: 100%;
+  height: 75vh;
   background-image: url(../IMG/HEADER/Img.png);
   background-position: top;
   background-size: cover;
   display: flex;
   justify-content: center;
-} 
+  overflow: hidden;
+}
+
+
+header::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(47, 53, 63, 0.40);
+  z-index: 1;
+}
+
+header>* {
+  position: relative;
+  z-index: 2;
+}
 
 .navbar {
   display: flex;
-  width: 1860px;
-  height: 119px;
+  width: 96vw;
+  height: 9.2vh;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--main-white);
+  font-weight: 300;
+}
+
+.main_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   font-weight: 300;
 }
 
@@ -142,23 +191,26 @@ header {
 
 /* logo start */
 .logo {
-  width: 204px;
-  height: 63px;
+  width: 10vw;
+  height: 5vh;
   color: var(--main-white);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  margin-top: 7px;
 }
 
 .logo_text {
-  width: 137px;
-  height: 48px;
+  width: 7vw;
+  height: 4vh;
   color: var(--main-white, #FFF);
   font-family: "TT Norms";
-  font-size: 24px;
+  font-size: 1.7vh;
   font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+  letter-spacing: 0.07vw;
+  font-weight: 600;
+  line-height: 1.3vw;
+  margin-left: 0.6vh;
 }
 
 .logo_img {
@@ -167,23 +219,24 @@ header {
 }
 
 .header_vector1 {
-  width: 57.766px;
-  height: 42.361px;
+  width: 3vw;
+  height: 4vh;
   margin-left: 1.71px;
-  margin-top: 3px;
 }
 
 .header_vector2 {
-  width: 14.698px;
-  height: 15.25px;
+  width: 1vw;
+  height: 1.2vh;
+  margin-bottom: -2px;
+  margin-left: -0.1vw;
 }
 
 /* logo done */
 nav {
-  width: 1188px;
+  width: 61vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-family: "Neue Machina";
 }
 
@@ -195,13 +248,12 @@ nav>li>img {
 nav>p {
   color: var(--main-white, #FFF);
   font-family: "Neue Machina";
-  font-size: 24px;
+  font-size: 2vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 4px;
-  margin-right: 14px;
+  
 }
 
 .nav_btn {
@@ -227,11 +279,11 @@ nav>p {
 ul,
 li {
   display: flex;
-  gap: 120px;
+  gap: 240px;
   align-items: center;
   color: var(--main-white, #FFF);
   font-family: "Neue Machina";
-  font-size: 24px;
+  font-size: 1.28vw;
   font-style: normal;
   line-height: normal;
   text-transform: lowercase;
@@ -241,8 +293,9 @@ li {
 }
 
 ul {
-  width: 618px;
-  justify-content: space-evenly;
+  display: flex;
+  width: 36vw;
+  justify-content: flex-start;
 }
 
 a {
@@ -253,67 +306,59 @@ a {
 .nav_hr {
   width: 1px;
   background-color: var(--main-white, #FFF);
-  height: 119px;
+  height: 9vh;
   border: none;
-  margin-left: -5px;
+  margin-left: 0.19vw;
 }
 
 /* nav end */
 .title {
   display: flex;
-  width: 876px;
-  height: 63px;
-  background-color: var(--main-blue);
-  align-items: center;
-  margin-left: 120px;
-  margin-top: 198px;
-}
-
-.title h1 {
   color: var(--main-white, #FFF);
   font-family: "Neue Machina";
-  font-size: 50px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 800;
-  line-height: 130%;
-  padding-bottom: 10px;
+  width: 876px;
+  height: 65px;
+  background-color: var(--main-blue);
+  align-items: center;
+  margin-left: 90px;
 }
 
 .header_btn {
   display: flex;
   color: var(--main-white);
-  border: 3px solid var(--main-white);
+  border: 1px solid var(--main-white);
+  font-weight: 400;
   width: 280px;
   height: 280px;
   border-radius: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 52px;
-  margin-left: 120px;
+  margin-bottom: 50px;
+  margin-left: 90px;
 }
 
 .header_btn p {
-  color: var(--main-white, #FFF);
+  width: 160px;
+  font-size: 40px;
   text-align: center;
-  font-family: "Neue Machina";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  /* 39px */
-  text-transform: uppercase;
 }
 
 /* header end */
 
+
 /* div 1 start */
 .whatAreOurGoals {
-  margin-top: 200px;
+  margin-top: 15vh;
+  width: 100%;
+  height: 149.5vh;
   display: flex;
-  width: 1920px;
-  padding: 0 150px;
+  padding: 0 7.73%;
+  padding-left: 7.2vw;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 100px;
 }
@@ -321,25 +366,28 @@ a {
 .whatAreOurGoals h1 {
   color: #2F353F;
   font-family: "Neue Machina";
-  font-size: 60px;
+  font-size: 5.4vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: -1.59vh;
 }
 
 .goals_grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 500px);
-  width: 1620px;
-  height: 1498px;
+  grid-template-rows: repeat(3, 1fr);
+  width: 146.3vh;
+  height: 135.3vh;
+  margin-top: -5.5vh;
 }
 
 .goals {
   border: 1px solid #95989D;
-  border-radius: 70px;
+  border-radius: 6vh;
   overflow: hidden;
-  padding: 50px;
+  padding: 3.5vh;
+  padding-left: 4.1vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -348,32 +396,34 @@ a {
 .goals h3 {
   color: #2E2BD0;
   font-family: "Neue Machina";
-  font-size: 40px;
+  font-size: 3.3vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: -15px;
 }
 
 .goals h2 {
   color: #2F353F;
   font-family: "Neue Machina";
-  font-size: 32px;
+  font-size: 2.85vh;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin-bottom: 30px;
+  margin-bottom: 2.5vh;
 }
 
 .goals p {
   color: rgba(47, 53, 63, 0.70);
-  font-family: 'Gilroy';
-  font-size: 29px;
+  font-family: "Neue Machina";
+  font-size: 2.6vh;
   font-style: normal;
   font-weight: 400;
-  line-height: 155%;
+  line-height: 2.2vw;
+  margin-bottom: 1.5vh;
+  letter-spacing: -1px;
   /* 45px */
 }
+
 
 .goals_div1 {
   grid-area: 1 / 1 / 2 / 3;
@@ -385,20 +435,25 @@ a {
 
 .goals_div3 {
   grid-area: 1 / 5 / 2 / 7;
-  object-fit: cover;
-  display: block;
+  background-image: url('../img/DIV1/Block_1.png');
+  background-size: cover;
   padding: 0;
 }
 
 .goals_div4 {
   grid-area: 2 / 1 / 3 / 4;
-  object-fit: cover;
-  display: block;
+  background-image: url('../img/DIV1/Block_5.png');
+  background-size: cover;
   padding: 0;
 }
 
 .goals_div5 {
   grid-area: 2 / 4 / 3 / 7;
+}
+
+.goals_div5 p {
+  line-height: 1vw;
+  margin-bottom: 2.2vh;
 }
 
 .goals_div6 {
@@ -407,12 +462,13 @@ a {
 
 .goals_div7 {
   grid-area: 3 / 5 / -1 / -1;
-  object-fit: cover;
-  display: block;
+  background-image: url('../img/DIV1/Block_6.png');
+  background-size: cover;
   padding: 0;
 }
 
 /* div 1 end */
+
 
 /* lauryno end */
 
@@ -515,7 +571,7 @@ a {
 
 /* <!-- Div 4 start --> */
 .container {
-  max-width: 1320px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 48px;
 }
@@ -560,7 +616,6 @@ a {
 
 .tech-timeline {
   width: 100%;
-  overflow-x: auto;
 }
 
 .tech-track {
