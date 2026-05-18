@@ -35,27 +35,60 @@
 }
 
 body {
-  width: 1920px;
-  height: 9097px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    url('../IMG/BG_Noise.png') repeat;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  z-index: 9999;
+} */
 
 /* lauryno start */
 /* header start */
 header {
-  background-image: url(../IMG/HEADER/annie-spratt-QckxruozjRg-unsplash.jpg);
-  width: 1920px;
-  height: 975px;
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  background-image: url(../IMG/HEADER/Img.png);
   background-position: top;
   background-size: cover;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+}
+
+
+header::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(47, 53, 63, 0.40);
+  z-index: 1;
+}
+
+header>* {
+  position: relative;
+  z-index: 2;
 }
 
 .navbar {
   display: flex;
-  width: 1860px;
-  height: 119px;
+  width: 96vw;
+  height: 9.2vh;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--main-white);
@@ -71,22 +104,26 @@ header {
 
 /* logo start */
 .logo {
-  width: 204px;
-  height: 63px;
+  width: 10vw;
+  height: 5vh;
   color: var(--main-white);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  margin-top: 7px;
 }
 
 .logo_text {
-  width: 137px;
-  height: 48px;
+  width: 7vw;
+  height: 4vh;
   color: var(--main-white, #FFF);
-  font-size: 24px;
+  font-family: "TT Norms";
+  font-size: 1.7vh;
   font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
+  letter-spacing: 0.07vw;
+  font-weight: 600;
+  line-height: 1.3vw;
+  margin-left: 0.6vh;
 }
 
 .logo_img {
@@ -96,28 +133,41 @@ header {
 }
 
 .header_vector1 {
-  width: 57.766px;
-  height: 42.361px;
+  width: 3vw;
+  height: 4vh;
   margin-left: 1.71px;
-  margin-top: 2.5px;
 }
 
 .header_vector2 {
-  width: 14.698px;
-  height: 15.25px;
+  width: 1vw;
+  height: 1.2vh;
+  margin-bottom: -2px;
+  margin-left: -0.1vw;
 }
 
 /* logo done */
 nav {
-  width: 1145px;
+  width: 61vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  font-family: "Neue Machina";
 }
 
 nav>li>img {
   width: 20px;
   height: 20px;
+}
+
+nav>p {
+  color: var(--main-white, #FFF);
+  font-family: "Neue Machina";
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  
 }
 
 .nav_btn {
@@ -140,11 +190,23 @@ nav>li>img {
 ul,
 li {
   display: flex;
-  gap: 120px;
+  gap: 240px;
   align-items: center;
   color: var(--main-white, #FFF);
-  font-size: 24px;
+  font-family: "Neue Machina";
+  font-size: 1.28vw;
+  font-style: normal;
+  line-height: normal;
+  text-transform: lowercase;
   list-style: none;
+  font-weight: 300;
+
+}
+
+ul {
+  display: flex;
+  width: 36vw;
+  justify-content: flex-start;
 }
 
 a {
@@ -155,8 +217,9 @@ a {
 .nav_hr {
   width: 1px;
   background-color: var(--main-white, #FFF);
-  height: 119px;
+  height: 9vh;
   border: none;
+  margin-left: 0.19vw;
 }
 
 /* nav end */
@@ -197,6 +260,122 @@ a {
 /* header end */
 
 /* div 1 start */
+.whatAreOurGoals {
+  margin-top: 15vh;
+  width: 100%;
+  height: 149.5vh;
+  display: flex;
+  padding: 0 7.73%;
+  padding-left: 7.2vw;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.whatAreOurGoals h1 {
+  color: #2F353F;
+  font-family: "Neue Machina";
+  font-size: 5.4vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1.59vh;
+}
+
+.goals_grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 146.3vh;
+  height: 135.3vh;
+  margin-top: -5.5vh;
+}
+
+.goals {
+  border: 1px solid #95989D;
+  border-radius: 6vh;
+  overflow: hidden;
+  padding: 3.5vh;
+  padding-left: 4.1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goals h3 {
+  color: #2E2BD0;
+  font-family: "Neue Machina";
+  font-size: 3.3vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.goals h2 {
+  color: #2F353F;
+  font-family: "Neue Machina";
+  font-size: 2.85vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 2.5vh;
+}
+
+.goals p {
+  color: rgba(47, 53, 63, 0.70);
+  font-family: "Neue Machina";
+  font-size: 2.6vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2vw;
+  margin-bottom: 1.5vh;
+  letter-spacing: -1px;
+  /* 45px */
+}
+
+
+.goals_div1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.goals_div2 {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.goals_div3 {
+  grid-area: 1 / 5 / 2 / 7;
+  background-image: url('../img/DIV1/Block_1.png');
+  background-size: cover;
+  padding: 0;
+}
+
+.goals_div4 {
+  grid-area: 2 / 1 / 3 / 4;
+  background-image: url('../img/DIV1/Block_5.png');
+  background-size: cover;
+  padding: 0;
+}
+
+.goals_div5 {
+  grid-area: 2 / 4 / 3 / 7;
+}
+
+.goals_div5 p {
+  line-height: 1vw;
+  margin-bottom: 2.2vh;
+}
+
+.goals_div6 {
+  grid-area: 3 / 1 / 5 / 5;
+}
+
+.goals_div7 {
+  grid-area: 3 / 5 / -1 / -1;
+  background-image: url('../img/DIV1/Block_6.png');
+  background-size: cover;
+  padding: 0;
+}
 
 /* div 1 end */
 
@@ -206,7 +385,7 @@ a {
 
 /* <!-- Div 3 start --> */
 .container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 60px;
 }
@@ -240,9 +419,8 @@ a {
   padding-top: 8px;
 }
 
-.tech_timeline {
-  overflow-x: auto;
-  padding-bottom: 10px;
+.tech-timeline {
+  width: 100%;
 }
 
 .tech_track {
