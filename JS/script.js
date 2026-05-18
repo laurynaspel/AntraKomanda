@@ -79,4 +79,4 @@ div2Option4.addEventListener('click', () => {
   div2Div4.style.display = 'block';
 });
 //div 2 --- "Why choose us?"" section --- end
-//gediminas end 
+//gediminas end
