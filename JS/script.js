@@ -1,6 +1,5 @@
 'use strict';
 
-
 //gediminas start
 //div 2 --- "Why choose us?"" section --- start
 const div2Option1 = document.querySelector('.slections-option-1');
