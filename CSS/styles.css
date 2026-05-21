@@ -119,9 +119,9 @@ body::before {
 header {
   position: relative;
   width: 100%;
-  height: 75vh;
+  height: 106vh;
   background-image: url(../IMG/HEADER/Img.png);
-  background-position: top;
+  background-position: left;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -138,15 +138,10 @@ header::before {
   z-index: 1;
 }
 
-header>* {
-  position: relative;
-  z-index: 2;
-}
-
 .navbar {
   display: flex;
   width: 96vw;
-  height: 9.2vh;
+  height: 13vh;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--main-white);
@@ -174,65 +169,58 @@ header>* {
   height: 5vh;
   color: var(--main-white);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 7px;
+  align-content: center;
 }
 
 .logo_text {
   width: 7vw;
-  height: 4vh;
+  height: 5vh;
   color: var(--main-white, #FFF);
   font-family: "TT Norms";
-  font-size: 1.7vh;
+  font-size: 1.16vw;
   font-style: normal;
   letter-spacing: 0.07vw;
   font-weight: 600;
   line-height: 1.3vw;
   margin-left: 0.6vh;
+  display: flex;
+  align-items: center;
 }
 
 .logo_img {
   display: flex;
-  flex-direction: column-reverse;
-}
-
-.header_vector1 {
-  width: 3vw;
-  height: 4vh;
-  margin-left: 1.71px;
-}
-
-.header_vector2 {
-  width: 1vw;
-  height: 1.2vh;
-  margin-bottom: -2px;
-  margin-left: -0.1vw;
+  height: 6vh;
 }
 
 /* logo done */
 nav {
-  width: 61vw;
+  width: 60.8vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-family: "Neue Machina";
 }
 
-nav>li>img {
-  width: 20px;
-  height: 20px;
+nav>a>img {
+  width: 1vw;
+  height: 2.4vh;
+  margin-bottom: -0.3vh;
+  margin-left: 0.2vw;
 }
 
-nav>p {
+nav>a {
   color: var(--main-white, #FFF);
   font-family: "Neue Machina";
-  font-size: 2vh;
+  font-size: 2.6vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-
+  margin-left: 4vw;
+  margin-right: 2vw;
+  margin-bottom: 0.5vh;
 }
 
 .nav_btn {
@@ -241,12 +229,11 @@ nav>p {
   color: var(--main-white);
   border: none;
   border-radius: 10px;
-  height: 59px;
-  width: 254px;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 20px;
+  font-size: 2vh;
   padding: 20px;
+  margin-left: 2.5vw;
 }
 
 .nav_btn img {
@@ -258,7 +245,7 @@ nav>p {
 ul,
 li {
   display: flex;
-  gap: 240px;
+  gap: 6.1vw;
   align-items: center;
   color: var(--main-white, #FFF);
   font-family: "Neue Machina";
@@ -285,7 +272,7 @@ a {
 .nav_hr {
   width: 1px;
   background-color: var(--main-white, #FFF);
-  height: 9vh;
+  height: 12.9vh;
   border: none;
   margin-left: 0.19vw;
 }
@@ -295,34 +282,39 @@ a {
   display: flex;
   color: var(--main-white, #FFF);
   font-family: "Neue Machina";
-  font-size: 25px;
+  font-size: 2.83vh;
   font-style: normal;
   font-weight: 800;
-  width: 876px;
-  height: 65px;
+  width: 45.5vw;
+  height: 8vh;
   background-color: var(--main-blue);
   align-items: center;
-  margin-left: 90px;
+  margin-left: 6.5vw;
+  margin-top: 20vh;
 }
 
 .header_btn {
   display: flex;
   color: var(--main-white);
-  border: 1px solid var(--main-white);
+  border: 0.5vh solid var(--main-white);
   font-weight: 400;
-  width: 280px;
-  height: 280px;
+  width: 14.5vw;
+  height: 30.5vh;
   border-radius: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
-  margin-left: 90px;
+  text-align: center;
+  margin-bottom: 5.2vh;
+  margin-left: 6.4vw;
 }
 
 .header_btn p {
-  width: 160px;
-  font-size: 40px;
+  width: 9vw;
+  font-size: 3.4vh;
   text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 1.2vh;
 }
 
 /* header end */
@@ -330,7 +322,7 @@ a {
 
 /* div 1 start */
 .whatAreOurGoals {
-  margin-top: 15vh;
+  margin: 10px;
   width: 100%;
   height: 149.5vh;
   display: flex;
@@ -340,6 +332,7 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   gap: 100px;
+  border: 1px solid red;
 }
 
 .whatAreOurGoals h1 {
