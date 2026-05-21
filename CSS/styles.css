@@ -8,101 +8,80 @@
 
 @font-face {
   font-family: 'Neue Machina';
-  src: url('/FONTS/NeueMachina-Light.otf') format('opentype');
+  src: url('../FONTS/NeueMachina-Light.otf') format('opentype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'Neue Machina';
-  src: url('/FONTS/NeueMachina-Regular.otf') format('opentype');
+  src: url('../FONTS/NeueMachina-Regular.otf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Neue Machina';
-  src: url('/FONTS/NeueMachina-Ultrabold.otf') format('opentype');
+  src: url('../FONTS/NeueMachina-Ultrabold.otf') format('opentype');
   font-weight: 800;
 }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url('/FONTS/TTNorms-Light.otf') format('opentype');
+  src: url('../FONTS/TTNorms-Light.otf') format('opentype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url('/FONTS/TTNorms-Regular.otf') format('opentype');
+  src: url('../FONTS/TTNorms-Regular.otf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url('/FONTS/TTNorms-Italic.otf') format('opentype');
+  src: url('../FONTS/TTNorms-Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url('/FONTS/TTNorms-Bold.otf') format('opentype');
+  src: url('../FONTS/TTNorms-Bold.otf') format('opentype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url('/FONTS/TTNorms-BoldItalic.otf') format('opentype');
+  src: url('../FONTS/TTNorms-BoldItalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url('/FONTS/TTNorms-Black.otf') format('opentype');
+  src: url('../FONTS/TTNorms-Black.otf') format('opentype');
   font-weight: 900;
 }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url('/FONTS/TTNorms-BlackItalic.otf') format('opentype');
+  src: url('../FONTS/TTNorms-BlackItalic.otf') format('opentype');
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/FONTS/Gilroy-Light.otf') format('opentype');
+  src: url('../FONTS/Gilroy-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/FONTS/Gilroy-ExtraBold.otf') format('opentype');
+  src: url('../FONTS/Gilroy-ExtraBold.otf') format('opentype');
   font-weight: 800;
   font-style: normal;
   font-family: 'Neue Machina';
-}
-
-@font-face {
-  font-family: 'Neue Machina';
-  src: url('/FONTS/NeueMachina-Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neue Machina';
-  src: url('/FONTS/NeueMachina-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Neue Machina';
-  src: url('/FONTS/NeueMachina-Ultrabold.otf') format('opentype');
-  font-weight: 800;
-  font-style: normal;
 }
 
 :root {
@@ -148,7 +127,6 @@ header {
   justify-content: center;
   overflow: hidden;
 }
-
 
 header::before {
   content: '';
@@ -254,7 +232,7 @@ nav>p {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  
+
 }
 
 .nav_btn {
@@ -475,18 +453,21 @@ a {
 
 /*Gediminas start*/
 /*div 2 --- "Why choose us?"" section --- start*/
-.container-div-2{
-  margin-top: 15.625rem; /* change */
+.container-div-2 {
+  margin-top: 15.625rem;
+  /* change */
   width: 100vw;
   height: 100vh;
   padding-left: 7.81vw;
 }
-.container-div-2-h2{
+
+.container-div-2-h2 {
   font-family: 'Neue Machina';
   font-size: 3.12vw;
   color: #2F353F;
 }
-.container-div-2-p{
+
+.container-div-2-p {
   font-family: 'Gilroy';
   margin-top: 9.9vh;
   font-size: 1.233vw;
@@ -494,23 +475,25 @@ a {
   line-height: 3.6vh;
   letter-spacing: 0%;
 }
-.container-div-text{
+
+.container-div-text {
   height: 8.3vh;
   width: 50vw;
 }
 
-.container-selection-divs{
+.container-selection-divs {
   width: 100vw;
   display: flex;
 }
 
-.slections{
+.slections {
   margin-top: 18.3vh;
   height: 51vh;
   width: 18.4vw;
   border-left: 3px solid #2F353F4D;
 }
-.slections-option-1{
+
+.slections-option-1 {
   color: #2E2BD0;
   padding-top: 0.3vh;
   padding-left: 2.4vw;
@@ -519,7 +502,10 @@ a {
   font-size: 1.68vw;
   font-weight: 400;
 }
-.slections-option-2, .slections-option-3, .slections-option-4{
+
+.slections-option-2,
+.slections-option-3,
+.slections-option-4 {
   margin-top: 10.7vh;
   padding-left: 2.4vw;
   font-size: 1.68vw;
@@ -528,7 +514,7 @@ a {
   font-family: 'Neue Machina';
 }
 
-.selected-divs{
+.selected-divs {
   margin-top: 18.2vh;
   margin-left: 7.8vw;
   padding: 0 1.99vw;
@@ -538,7 +524,7 @@ a {
   border: 1px solid rgba(47, 53, 63, 0.5);
 }
 
-.selected-div h3{
+.selected-div h3 {
   margin-left: 0.6vw;
   margin-top: 3.8vh;
   color: #2E2BD0;
@@ -547,11 +533,11 @@ a {
   font-size: 2.09vw;
 }
 
-.selected-div p{
+.selected-div p {
   font-weight: 400;
   margin-left: 0.6vw;
   margin-top: 4.7vh;
-  color:#2F353FB2;
+  color: #2F353FB2;
   font-family: 'Gilroy';
   letter-spacing: 0%;
   font-size: 1.564vw;
@@ -559,17 +545,117 @@ a {
   word-spacing: -0.05vw;
 }
 
-.selected-div{
+.selected-div {
   width: 58.2vw;
   height: 46.9vh;
 }
 
-.selected-div-2, .selected-div-3 ,.selected-div-4{
+.selected-div-2,
+.selected-div-3,
+.selected-div-4 {
   display: none;
 }
+
 /*div 2 --- "Why choose us?"" section --- end*/
 /*Gediminas end*/
+/* Div3 start*/
+.how-we-work-container {
+  background-color: #f7f7f8;
+  width: 100vw;
+  padding: 7.8vw;
+  box-sizing: border-box;
+}
 
+.section-title {
+  font-size: 3.2vw;
+  font-weight: 400;
+  margin-bottom: 4.7vw;
+  color: #1a1a1a;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 7fr);
+  margin-bottom: 5vw;
+}
+
+.grid-card {
+  border-radius: 2vw;
+  padding: 2.5vw;
+  min-height: 11.5vw;
+  box-sizing: border-box;
+}
+
+.grid-card h3 {
+  font-size: 1.4vw;
+  font-weight: 500;
+  margin: 0 0 2vw 0;
+  line-height: 1;
+}
+
+.grid-card p {
+  font-size: 1vw;
+  color: #86868b;
+  margin: 0 0 8px 0;
+}
+
+.border-card {
+  border: 2px solid #b8b8b8;
+}
+
+.text-only h1 {
+  color: #515154;
+  font-weight: 500;
+  margin-top: 1.2vw;
+  font-size: 1VW;
+}
+
+.text-only strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.learn-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 15vw;
+  min-width: 100px;
+  min-height: 100px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn span {
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+}
+
+@media (max-width: 900px) {
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learn-more-btn {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* DIV3 END */
 /* <!-- Div 4 start --> */
 .container {
   width: 100%;
@@ -742,36 +828,171 @@ a {
   width: 100px;
   height: 100px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 28px;
-  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Gilroy', sans-serif;
+  cursor: pointer;
 }
 
-.industry-icon img {
+.input_group_file_upload input[type="file"] {
+  display: none;
+}
+
+.btn_submit {
+  background: #ffffff;
+  color: #5d59f0;
+  border: none;
+  padding: 1.25rem 3.125rem;
+  border-radius: 0.75rem;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Div 5 End */
+
+/* Footer Start */
+
+.main_footer {
+  width: 100vw;
+  max-width: 116.25rem;
+  height: 56.4vh;
+  margin: 16.375rem auto 0;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  border-top: 0.063rem solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer_content_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
-.industry-card h3 {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.1;
-  color: #1a1a2e;
+.contact_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 24.688rem;
+  height: 18.625rem;
+}
+
+.offices_block {
+  display: flex;
+  flex-direction: column;
+  width: 24.375rem;
+  height: 17.688rem;
+}
+
+.services_block {
+  display: flex;
+  flex-direction: column;
+  width: 14.438rem;
+  height: 22.688rem;
+  justify-content: space-between;
+}
+
+.column_title {
+  text-transform: lowercase;
+  color: #888;
+  font-weight: 600;
+  margin: 0 0 1.25rem 0;
+  font-size: 0.95rem;
+}
+
+.footer_email {
+  color: #2E2BD0;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.office_location {
+  margin-bottom: 1rem;
+}
+
+.office_location a {
+  color: #2E2BD0;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.office_detail {
+  color: #666;
+  font-size: 0.875rem;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.4;
+}
+
+.services_block a {
+  text-decoration: none;
+  color: #2e2bd0;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.social_icons {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.social_icons svg {
+  width: 2.813rem;
+  height: 2.813rem;
+  cursor: pointer;
+  border: 0.08rem solid #2E2BD0;
+  border-radius: 0.625rem;
+  padding: 0.313rem;
+  box-sizing: border-box;
+}
+
+.footer_contact_btn {
+  background-color: #2E2BD0;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
+}
+
+.footer_contact_btn:hover {
+  opacity: 0.9;
+}
+
+.copyright_block {
   width: 100%;
-  border-bottom: 1px solid #1a1a2e;
-  padding-bottom: 18px;
-  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.063rem solid #e0e0e0;
+  padding-top: 1.5rem;
+  color: #888;
 }
 
-.industry-card p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.9;
-  color: #1a1a2e;
-  opacity: 0.55;
-  max-width: 320px;
+.copyright_block p {
+  font-size: 0.8rem;
+  margin: 0;
 }
 
-/* <!-- Div 4 end --> */
+/* Footer End */
+
+/* Matas End */
