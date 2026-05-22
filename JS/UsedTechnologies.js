@@ -1,40 +1,48 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
+	var section = document.querySelector('.used-technologies-section');
+	if (!section) {
+		return;
+	}
 
-	const container = document.querySelector('.used-technologies-section');
-	if (!container) return;
-
-	const techItems = Array.from(container.querySelectorAll('.tech-item'));
-	if (!techItems.length) return;
-
-	const iconBox = container.querySelector('.tech-icon-box');
+	var items = document.querySelectorAll('.tech-item');
+	var iconBox = document.querySelector('.tech-icon-box');
 	
-	const updateActiveState = (activeItem) => {
-		techItems.forEach(item => {
-			const label = item.querySelector('.tech-label');
-			if (item === activeItem) {
-				item.classList.add('active');
-				if (label) label.style.fontSize = 'calc(1rem * 1.2)';
-				
-				if (iconBox) {
-					activeItem.appendChild(iconBox);
-				}
-			} else {
-				item.classList.remove('active');
-				if (label) label.style.fontSize = '1rem';
-			}
-		});
-	};
+	if (items.length > 0) {
+		setActiveItem(items[0]);
+	}
 
-	techItems.forEach((item, idx) => {
+	for (var i = 0; i < items.length; i++) {
+		var item = items[i];
 		item.style.cursor = 'pointer';
-	});
-	updateActiveState(techItems[0]);
-
-	techItems.forEach(item => {
-		item.addEventListener('click', () => {
-			updateActiveState(item);
+		
+		item.addEventListener('click', function(event) {
+			event.preventDefault();
+			setActiveItem(this);
 		});
-	});
+	}
+
+	function setActiveItem(selectedItem) {
+		for (var i = 0; i < items.length; i++) {
+			items[i].classList.remove('active');
+			var textLabel = items[i].querySelector('.tech-label');
+			if (textLabel) {
+				textLabel.style.fontSize = '1rem';
+			}
+		}
+
+		selectedItem.classList.add('active');
+		var activeLabel = selectedItem.querySelector('.tech-label');
+		if (activeLabel) {
+			activeLabel.style.fontSize = 'calc(1rem * 1.2)';
+		}
+
+		if (iconBox) {
+			var iconAlreadyInItem = selectedItem.querySelector('.tech-icon-box');
+			if (!iconAlreadyInItem) {
+				selectedItem.appendChild(iconBox);
+			}
+		}
+	}
 });
