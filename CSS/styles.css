@@ -119,7 +119,7 @@ body::before {
 header {
   position: relative;
   width: 100%;
-  height: 106vh;
+  height: 99vh;
   background-image: url(../IMG/HEADER/Img.png);
   background-position: left;
   background-size: cover;
@@ -130,12 +130,15 @@ header {
 
 header::before {
   content: '';
-
   position: absolute;
   inset: 0;
-
   background: rgba(47, 53, 63, 0.40);
   z-index: 1;
+}
+
+header>* {
+  position: relative;
+  z-index: 2;
 }
 
 .navbar {
@@ -324,7 +327,7 @@ a {
 .whatAreOurGoals {
   margin: 10px;
   width: 100%;
-  height: 149.5vh;
+  height: 172vh;
   display: flex;
   padding: 0 7.73%;
   padding-left: 7.2vw;
@@ -333,12 +336,13 @@ a {
   align-items: flex-start;
   gap: 100px;
   border: 1px solid red;
+  margin-top: 21vh;
 }
 
 .whatAreOurGoals h1 {
   color: #2F353F;
   font-family: "Neue Machina";
-  font-size: 5.4vh;
+  font-size: 6vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
