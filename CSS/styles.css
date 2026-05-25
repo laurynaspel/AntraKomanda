@@ -299,18 +299,19 @@ a {
   display: flex;
   color: var(--main-white, #FFF);
   font-family: "Neue Machina";
-  font-size: 2.83vh;
   font-style: normal;
   width: 45.5vw;
-  height: 8vh;
+  height: 7vh;
   background-color: var(--main-blue);
   align-items: center;
   margin-left: 6.5vw;
   margin-top: 20vh;
+  font-size: 2.9vh;
+  line-height: 7.5vh;
 }
 
 .title h1 {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .header_btn {
@@ -330,7 +331,7 @@ a {
 
 .header_btn p {
   width: 9.1vw;
-  font-size: 3.4vh;
+  font-size: 3.04vh;
   text-align: center;
   font-weight: 100;
   text-transform: uppercase;
@@ -342,45 +343,49 @@ a {
 
 /* div 1 start */
 .whatAreOurGoals {
-  margin: 10px;
   width: 100%;
-  height: 172vh;
+  height: 169vh;
   display: flex;
-  padding: 0 7.73%;
-  padding-left: 7.2vw;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 100px;
-  border: 1px solid red;
-  margin-top: 21vh;
+  margin-top: 20vh;
+  padding: 8vw;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 4.5vh;
 }
 
 .whatAreOurGoals h1 {
   color: #2F353F;
   font-family: "Neue Machina";
-  font-size: 6vh;
+  font-size: 6.1vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-top: -1.59vh;
+  margin-left: -0.2vw;
 }
 
 .goals_grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  width: 146.3vh;
-  height: 135.3vh;
-  margin-top: -5.5vh;
+  width: 84.5vw;
+  height: 153vh;
+  border: 2px solid red;
+  margin: -0.2vw;
+  margin-top: 2.5vh;
 }
 
 .goals {
   border: 1px solid #95989D;
-  border-radius: 6vh;
+  border-radius: 4vw;
   overflow: hidden;
   padding: 3.5vh;
-  padding-left: 4.1vh;
+  padding-left: 2.5vw;
+  padding-bottom: 6.5vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -389,7 +394,7 @@ a {
 .goals h3 {
   color: #2E2BD0;
   font-family: "Neue Machina";
-  font-size: 3.3vh;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -398,25 +403,21 @@ a {
 .goals h2 {
   color: #2F353F;
   font-family: "Neue Machina";
-  font-size: 2.85vh;
+  font-size: 3.25vh;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin-bottom: 2.5vh;
+  margin-bottom: 3vh;
 }
 
 .goals p {
   color: rgba(47, 53, 63, 0.70);
   font-family: "Neue Machina";
-  font-size: 2.6vh;
+  font-size: 1.35vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.2vw;
-  margin-bottom: 1.5vh;
-  letter-spacing: -1px;
-  /* 45px */
+  width: 20vw;
 }
-
 
 .goals_div1 {
   grid-area: 1 / 1 / 2 / 3;
@@ -445,12 +446,17 @@ a {
 }
 
 .goals_div5 p {
-  line-height: 1vw;
-  margin-bottom: 2.2vh;
+  line-height: 2vw;
+  width: 39vw;
 }
 
 .goals_div6 {
   grid-area: 3 / 1 / 5 / 5;
+}
+
+.goals_div6 p {
+  line-height: 2vw;
+  width: 46vw;
 }
 
 .goals_div7 {
@@ -574,6 +580,7 @@ a {
 /*Gediminas end*/
 /* Div3 start*/
 .how-we-work-container {
+  margin-top: 3.5vh;
   background-color: #f7f7f8;
   width: 100vw;
   padding: 7.8vw;
