@@ -505,32 +505,6 @@ a {
   width: 100vw;
   display: flex;
 }
-.selections-container{
-  display: flex;
-  flex-direction: row;
-}
-.long-bar{
-
-}
-.selected-marks{
-
-}
-.selected-mark-1{
-
-}
-.selected-mark-2{
-  
-}
-.selected-mark-3{
-  
-}
-.selected-mark-4{
-  
-}
-
-
-
-
 
 .slections {
   margin-top: 18.3vh;
