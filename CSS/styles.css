@@ -84,7 +84,6 @@
   font-family: 'Neue Machina';
 }
 
-
 :root {
   --main-blue: #2E2BD0;
   --main-white: #ffffff;
@@ -94,7 +93,7 @@
 }
 
 body {
-  width: 100%;
+  width: 100.5%;
   height: 100%;
   position: relative;
   background-color: #f5f5f5;
@@ -110,6 +109,7 @@ body::before {
   background:
     url('../IMG/BG_Noise.png') repeat;
   opacity: 0.05;
+  filter: brightness(50%);
   mix-blend-mode: multiply;
   z-index: -9999;
 }
@@ -119,9 +119,9 @@ body::before {
 header {
   position: relative;
   width: 100%;
-  height: 75vh;
+  height: 99vh;
   background-image: url(../IMG/HEADER/Img.png);
-  background-position: top;
+  background-position: left;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -130,10 +130,8 @@ header {
 
 header::before {
   content: '';
-
   position: absolute;
   inset: 0;
-
   background: rgba(47, 53, 63, 0.40);
   z-index: 1;
 }
@@ -145,12 +143,13 @@ header>* {
 
 .navbar {
   display: flex;
-  width: 96vw;
-  height: 9.2vh;
+  width: 96.5vw;
+  height: 12.2vh;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--main-white);
+  border-bottom: 0.1vw solid var(--main-white);
   font-weight: 300;
+  margin-left: 0.6vw;
 }
 
 .main_menu {
@@ -170,95 +169,53 @@ header>* {
 
 /* logo start */
 .logo {
-  width: 10vw;
-  height: 5vh;
+  width: 11vw;
+  height: 7vh;
+  margin-left: -0.5vw;
   color: var(--main-white);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 7px;
+  align-content: center;
 }
 
 .logo_text {
   width: 7vw;
-  height: 4vh;
+  height: 5vh;
   color: var(--main-white, #FFF);
   font-family: "TT Norms";
-  font-size: 1.7vh;
+  font-size: 1.16vw;
   font-style: normal;
   letter-spacing: 0.07vw;
   font-weight: 600;
   line-height: 1.3vw;
-  margin-left: 0.6vh;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5vh;
+  margin-right: 1vh;
 }
 
 .logo_img {
   display: flex;
-  flex-direction: column-reverse;
-}
-
-.header_vector1 {
-  width: 3vw;
-  height: 4vh;
-  margin-left: 1.71px;
-}
-
-.header_vector2 {
-  width: 1vw;
-  height: 1.2vh;
-  margin-bottom: -2px;
-  margin-left: -0.1vw;
+  height: 6.2vh;
 }
 
 /* logo done */
 nav {
-  width: 61vw;
+  width: 61.7vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-family: "Neue Machina";
 }
 
-nav>li>img {
-  width: 20px;
-  height: 20px;
-}
 
-nav>p {
-  color: var(--main-white, #FFF);
-  font-family: "Neue Machina";
-  font-size: 2vh;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
-  
-}
-
-.nav_btn {
-  display: flex;
-  background-color: var(--main-blue);
-  color: var(--main-white);
-  border: none;
-  border-radius: 10px;
-  height: 59px;
-  width: 254px;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 20px;
-  padding: 20px;
-}
-
-.nav_btn img {
-  width: 24px;
-  height: 24px;
-}
 
 
 ul,
 li {
   display: flex;
-  gap: 240px;
+  gap: 6.1vw;
   align-items: center;
   color: var(--main-white, #FFF);
   font-family: "Neue Machina";
@@ -283,11 +240,58 @@ a {
 }
 
 .nav_hr {
-  width: 1px;
+  width: .1vw;
   background-color: var(--main-white, #FFF);
-  height: 9vh;
+  height: 12.3vh;
   border: none;
-  margin-left: 0.19vw;
+}
+
+.nav_buttons {
+  width: 25.2vw;
+  height: 12.2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_buttons>a>img {
+  width: 1vw;
+  height: 2.5vh;
+  margin-bottom: -0.3vh;
+  margin-right: 0.3vw;
+}
+
+.nav_buttons>a {
+  color: var(--main-white, #FFF);
+  font-family: "Neue Machina";
+  font-size: 2.4vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 0.5vh;
+  margin-right: 0.5vw;
+}
+
+.nav_btn {
+  display: flex;
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  border: none;
+  border-radius: 1vh;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2vh;
+  width: 12.8vw;
+  height: 6vh;
+  padding-bottom: 0.4vh;
+  padding-left: 0.4vw;
+}
+
+.nav_btn img {
+  width: 1vw;
+  height: 2vh;
+  margin-right: -1vh;
 }
 
 /* nav end */
@@ -295,34 +299,43 @@ a {
   display: flex;
   color: var(--main-white, #FFF);
   font-family: "Neue Machina";
-  font-size: 25px;
   font-style: normal;
-  font-weight: 800;
-  width: 876px;
-  height: 65px;
+  width: 45.5vw;
+  height: 7vh;
   background-color: var(--main-blue);
   align-items: center;
-  margin-left: 90px;
+  margin-left: 6.5vw;
+  margin-top: 20vh;
+  font-size: 2.9vh;
+  line-height: 7.5vh;
+}
+
+.title h1 {
+  font-weight: 600;
 }
 
 .header_btn {
   display: flex;
   color: var(--main-white);
-  border: 1px solid var(--main-white);
+  border: 0.1vw solid var(--main-white);
   font-weight: 400;
-  width: 280px;
-  height: 280px;
+  width: 14.5vw;
+  height: 28.5vh;
   border-radius: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
-  margin-left: 90px;
+  text-align: center;
+  margin-bottom: 5vh;
+  margin-left: 6.45vw;
 }
 
 .header_btn p {
-  width: 160px;
-  font-size: 40px;
+  width: 9.1vw;
+  font-size: 3.04vh;
   text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 1.2vh;
 }
 
 /* header end */
@@ -330,43 +343,49 @@ a {
 
 /* div 1 start */
 .whatAreOurGoals {
-  margin-top: 15vh;
   width: 100%;
-  height: 149.5vh;
+  height: 169vh;
   display: flex;
-  padding: 0 7.73%;
-  padding-left: 7.2vw;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 100px;
+  margin-top: 20vh;
+  padding: 8vw;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 4.5vh;
 }
 
 .whatAreOurGoals h1 {
   color: #2F353F;
   font-family: "Neue Machina";
-  font-size: 5.4vh;
+  font-size: 6.1vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-top: -1.59vh;
+  margin-left: -0.2vw;
 }
 
 .goals_grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  width: 146.3vh;
-  height: 135.3vh;
-  margin-top: -5.5vh;
+  width: 84.5vw;
+  height: 153vh;
+  border: 2px solid red;
+  margin: -0.2vw;
+  margin-top: 2.5vh;
 }
 
 .goals {
   border: 1px solid #95989D;
-  border-radius: 6vh;
+  border-radius: 4vw;
   overflow: hidden;
   padding: 3.5vh;
-  padding-left: 4.1vh;
+  padding-left: 2.5vw;
+  padding-bottom: 6.5vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -375,7 +394,7 @@ a {
 .goals h3 {
   color: #2E2BD0;
   font-family: "Neue Machina";
-  font-size: 3.3vh;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -384,25 +403,21 @@ a {
 .goals h2 {
   color: #2F353F;
   font-family: "Neue Machina";
-  font-size: 2.85vh;
+  font-size: 3.25vh;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin-bottom: 2.5vh;
+  margin-bottom: 3vh;
 }
 
 .goals p {
   color: rgba(47, 53, 63, 0.70);
   font-family: "Neue Machina";
-  font-size: 2.6vh;
+  font-size: 1.35vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.2vw;
-  margin-bottom: 1.5vh;
-  letter-spacing: -1px;
-  /* 45px */
+  width: 20vw;
 }
-
 
 .goals_div1 {
   grid-area: 1 / 1 / 2 / 3;
@@ -431,12 +446,17 @@ a {
 }
 
 .goals_div5 p {
-  line-height: 1vw;
-  margin-bottom: 2.2vh;
+  line-height: 2vw;
+  width: 39vw;
 }
 
 .goals_div6 {
   grid-area: 3 / 1 / 5 / 5;
+}
+
+.goals_div6 p {
+  line-height: 2vw;
+  width: 46vw;
 }
 
 .goals_div7 {
@@ -453,18 +473,21 @@ a {
 
 /*Gediminas start*/
 /*div 2 --- "Why choose us?"" section --- start*/
-.container-div-2{
-  margin-top: 15.625rem; /* change */
+.container-div-2 {
+  margin-top: 15.625rem;
+  /* change */
   width: 100vw;
   height: 100vh;
   padding-left: 7.81vw;
 }
-.container-div-2-h2{
+
+.container-div-2-h2 {
   font-family: 'Neue Machina';
   font-size: 3.12vw;
   color: #2F353F;
 }
-.container-div-2-p{
+
+.container-div-2-p {
   font-family: 'Gilroy';
   margin-top: 9.9vh;
   font-size: 1.233vw;
@@ -472,23 +495,25 @@ a {
   line-height: 3.6vh;
   letter-spacing: 0%;
 }
-.container-div-text{
+
+.container-div-text {
   height: 8.3vh;
   width: 50vw;
 }
 
-.container-selection-divs{
+.container-selection-divs {
   width: 100vw;
   display: flex;
 }
 
-.slections{
+.slections {
   margin-top: 18.3vh;
   height: 51vh;
   width: 18.4vw;
   border-left: 3px solid #2F353F4D;
 }
-.slections-option-1{
+
+.slections-option-1 {
   color: #2E2BD0;
   padding-top: 0.3vh;
   padding-left: 2.4vw;
@@ -497,7 +522,10 @@ a {
   font-size: 1.68vw;
   font-weight: 400;
 }
-.slections-option-2, .slections-option-3, .slections-option-4{
+
+.slections-option-2,
+.slections-option-3,
+.slections-option-4 {
   margin-top: 10.7vh;
   padding-left: 2.4vw;
   font-size: 1.68vw;
@@ -506,7 +534,7 @@ a {
   font-family: 'Neue Machina';
 }
 
-.selected-divs{
+.selected-divs {
   margin-top: 18.2vh;
   margin-left: 7.8vw;
   padding: 0 1.99vw;
@@ -516,7 +544,7 @@ a {
   border: 1px solid rgba(47, 53, 63, 0.5);
 }
 
-.selected-div h3{
+.selected-div h3 {
   margin-left: 0.6vw;
   margin-top: 3.8vh;
   color: #2E2BD0;
@@ -525,11 +553,11 @@ a {
   font-size: 2.09vw;
 }
 
-.selected-div p{
+.selected-div p {
   font-weight: 400;
   margin-left: 0.6vw;
   margin-top: 4.7vh;
-  color:#2F353FB2;
+  color: #2F353FB2;
   font-family: 'Gilroy';
   letter-spacing: 0%;
   font-size: 1.564vw;
@@ -537,72 +565,77 @@ a {
   word-spacing: -0.05vw;
 }
 
-.selected-div{
+.selected-div {
   width: 58.2vw;
   height: 46.9vh;
 }
 
-.selected-div-2, .selected-div-3 ,.selected-div-4{
+.selected-div-2,
+.selected-div-3,
+.selected-div-4 {
   display: none;
 }
+
 /*div 2 --- "Why choose us?"" section --- end*/
 /*Gediminas end*/
 /* Div3 start*/
 .how-we-work-container {
+  margin-top: 3.5vh;
   background-color: #f7f7f8;
   width: 100vw;
   padding: 7.8vw;
   box-sizing: border-box;
 }
- 
+
 .section-title {
-  font-size:3.2vw;
+  font-size: 3.2vw;
   font-weight: 400;
   margin-bottom: 4.7vw;
   color: #1a1a1a;
 }
- 
+
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, 7fr);
   margin-bottom: 5vw;
 }
- 
+
 .grid-card {
   border-radius: 2vw;
   padding: 2.5vw;
   min-height: 11.5vw;
   box-sizing: border-box;
 }
- 
+
 .grid-card h3 {
   font-size: 1.4vw;
   font-weight: 500;
   margin: 0 0 2vw 0;
   line-height: 1;
 }
- 
+
 .grid-card p {
-  font-size:1vw ;
+  font-size: 1vw;
   color: #86868b;
   margin: 0 0 8px 0;
 }
- 
+
 .border-card {
   border: 2px solid #b8b8b8;
 }
- 
+
 .text-only h1 {
   color: #515154;
   font-weight: 500;
   margin-top: 1.2vw;
   font-size: 1VW;
 }
- 
+
 .text-only strong {
   color: #1a1a1a;
   font-weight: 600;
 }
+
 .learn-more-btn {
   display: flex;
   align-items: center;
@@ -617,7 +650,7 @@ a {
   color: #1a1a1a;
   transition: all 0.3s ease;
 }
- 
+
 .learn-more-btn span {
   font-size: 1.5vw;
   font-weight: 500;
@@ -625,22 +658,24 @@ a {
   letter-spacing: 0.5px;
   line-height: 1.3;
 }
- 
+
 @media (max-width: 900px) {
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
- 
+
 @media (max-width: 600px) {
   .work-grid {
     grid-template-columns: 1fr;
   }
+
   .learn-more-btn {
     width: 120px;
     height: 120px;
   }
 }
+
 /* DIV3 END */
 
 /* Emil start */
