@@ -473,9 +473,10 @@ a {
 
 /*Gediminas start*/
 /*div 2 --- "Why choose us?"" section --- start*/
+
+
 .container-div-2 {
   margin-top: 15.625rem;
-  /* change */
   width: 100vw;
   height: 100vh;
   padding-left: 7.81vw;
@@ -576,6 +577,53 @@ a {
   display: none;
 }
 
+@media (max-width: 1080px) {
+.container-div-2 {
+  margin-top: 15.625rem;
+  margin-right:18px ;
+  width: 100vw;
+  height: 200vh;
+  padding-left: 2.7vw;
+}
+.container-div-2-h2 {
+  font-size: 7.4vw;
+}
+.container-div-2-p {
+  margin-top: 6.2vh;
+  font-size: 3.5vw;
+  line-height: 3.9vh;
+  letter-spacing: 0.0675vw;
+}
+.container-div-text{
+  height: 9.5vh;
+  width: 89vw;
+}
+.container-selection-divs{
+  display: flex;
+  flex-direction: column;
+}
+.slections{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15.9vh;
+  height: 5vh;
+  width: 18.4vw;
+}
+.slections-option-1{
+  color: #2E2BD0;
+  padding-top: 1.95vh;
+  margin-left: -0.3vw;
+  border-left: 0px solid #2E2BD0;
+  border-top: 5px solid #2E2BD0;
+  font-size: 4vw;
+
+}
+.slections-option-2, .slections-option-3, .slections-option-4{
+  margin-top: 11.7vh;
+  padding-left: 2.4vw;
+  font-size: 1.68vw;
+}
+}
 /*div 2 --- "Why choose us?"" section --- end*/
 /*Gediminas end*/
 /* Div3 start*/
