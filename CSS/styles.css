@@ -114,6 +114,25 @@ body::before {
   z-index: -9999;
 }
 
+@media (max-width: 1080px) {
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      url('../IMG/BG_Noise.png') repeat;
+    opacity: 0.05;
+    filter: brightness(50%);
+    mix-blend-mode: multiply;
+    z-index: -9999;
+    width: 1080px;
+  }
+
+  body {
+    width: 1080px;
+  }
+}
+
 /* lauryno start */
 /* header start */
 header {
@@ -209,9 +228,6 @@ nav {
   font-family: "Neue Machina";
 }
 
-
-
-
 ul,
 li {
   display: flex;
@@ -225,7 +241,6 @@ li {
   text-transform: lowercase;
   list-style: none;
   font-weight: 300;
-
 }
 
 ul {
@@ -237,6 +252,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--main-white);
+  font-size: 1.28vw;
 }
 
 .nav_hr {
@@ -339,7 +355,9 @@ a {
 }
 
 /* header end */
-
+@media (max-width: 1080px) {
+  
+}
 
 /* div 1 start */
 .whatAreOurGoals {
@@ -374,7 +392,6 @@ a {
   grid-template-rows: repeat(3, 1fr);
   width: 84.5vw;
   height: 153vh;
-  border: 2px solid red;
   margin: -0.2vw;
   margin-top: 2.5vh;
 }
