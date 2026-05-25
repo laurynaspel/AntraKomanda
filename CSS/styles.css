@@ -542,7 +542,7 @@ a {
   width: 58.2vw;
   height: 46.8vh;
   border-radius: 7vh;
-  border: 1px solid rgba(47, 53, 63, 0.5);
+  border: 2px solid rgba(47, 53, 63, 0.5);
 }
 
 .selected-div h3 {
@@ -589,10 +589,12 @@ a {
   font-size: 7.4vw;
 }
 .container-div-2-p {
-  margin-top: 6.2vh;
-  font-size: 3.5vw;
+  margin-left: -0.07vw;
+  margin-top: 6.15vh;
+  font-size: 3.7vw;
   line-height: 3.9vh;
-  letter-spacing: 0.0675vw;
+  letter-spacing: -0.04vw;
+  word-spacing: 0.091vw;
 }
 .container-div-text{
   height: 9.5vh;
@@ -603,25 +605,54 @@ a {
   flex-direction: column;
 }
 .slections{
+  border-left: 0px solid #2F353F4D;
+  border-top: 3px solid #2F353F4D;
   display: flex;
   flex-direction: row;
-  margin-top: 15.9vh;
-  height: 5vh;
-  width: 18.4vw;
+  margin-top: 16.02vh;
+  height: 2vh;
+  width: 92.5vw;
 }
 .slections-option-1{
   color: #2E2BD0;
-  padding-top: 1.95vh;
-  margin-left: -0.3vw;
+  margin-top: -0.421vh;
+  padding-top: 2.15vh;
+  margin-left: -0.2vw;
   border-left: 0px solid #2E2BD0;
   border-top: 5px solid #2E2BD0;
-  font-size: 4vw;
+  font-size: 4.1vw;
 
 }
 .slections-option-2, .slections-option-3, .slections-option-4{
-  margin-top: 11.7vh;
-  padding-left: 2.4vw;
-  font-size: 1.68vw;
+  margin-top: 2.5vh;  
+  padding-left: 7.7vw;
+  font-size: 3.51vw;
+}
+.selected-divs {
+  border-radius: 4.5vh;
+  margin-top: 13.6vh;
+  margin-left: 0;
+  width: 92.4vw;
+  height: 48vh;
+}
+.selected-div h3 {
+  margin-left: 2.4vw;
+  margin-top: 2vh;
+  font-size: 5.56vw;
+}
+
+.selected-div p {
+  margin-top: 2.305vh;  
+  padding-left: 1.9vw;
+  letter-spacing: 0.0239vw;
+  font-size: 3.6vw;
+  line-height: 3.9vh;
+  word-spacing: 0;
+}
+
+.selected-div {
+  width: 87vw;
+  height: 48vh;
 }
 }
 /*div 2 --- "Why choose us?"" section --- end*/
