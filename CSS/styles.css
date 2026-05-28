@@ -852,21 +852,31 @@ a {
   letter-spacing: -0.03em;
   line-height: 1.05;
   color: #1a1a2e;
-  max-width: 45%;
+  width: 556px;
+  height: 58px;
   margin: 0;
   transform: translateY(-0.6rem);
   font-family: 'Neue Machina';
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .used-technologies-section .section-header p {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   font-weight: 400;
   line-height: 1.8;
   color: #1a1a2e;
   opacity: 0.75;
-  max-width: 40%;
-  margin: 10rem 0 0;
+  width: 634px;
+  height: 144px;
+  margin: 10rem 0 0 -3rem;
   font-family: 'Gilroy';
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .tech-timeline {
