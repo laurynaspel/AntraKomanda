@@ -131,6 +131,7 @@ body::before {
 
   body {
     width: 1080px;
+    height: 19250px;
   }
 }
 
@@ -361,7 +362,14 @@ a {
 
 /* header end */
 @media (max-width: 1080px) {
-  
+  header{
+    background-position: center;
+    height: 12.45%;
+    width: 1080px;
+  }
+  .navbar{
+    height: 15%;
+  }
 }
 
 /* div 1 start */
