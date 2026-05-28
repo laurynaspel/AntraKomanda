@@ -100,6 +100,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -360,39 +361,7 @@ a {
 
 /* header end */
 @media (max-width: 1080px) {
-  header {
-    height: 239vh;
-  }
-
-  .title {
-    width: 81vw;
-    height: 47.5vh;
-    margin-left: 3.5vw;
-    margin-top: 21vh;
-    font-size: 5.9vh;
-    line-height: 16vh;
-  }
-
-  .navbar {
-    display: flex;
-    border: none;
-  }
-
-  .nav_hr {
-    display: none;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .logo {
-    display: block;
-  }
-
-  .main_menu {
-    width: 100%;
-  }
+  
 }
 
 /* div 1 start */
