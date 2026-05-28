@@ -509,7 +509,7 @@ a {
 
 .goals p {
   color: rgba(47, 53, 63, 0.70);
-  font-family: "Neue Machina";
+  font-family: "Gilroy";
   font-size: 1.35vw;
   font-style: normal;
   font-weight: 400;
@@ -564,7 +564,49 @@ a {
 }
 
 /* div 1 end */
+@media (max-width: 1080px) {
+  .whatAreOurGoals {
+    height: 26.7%;
+    margin-top: 20vh;
+    padding: 4vh;
+    justify-content: flex-start;
+  }
 
+  .whatAreOurGoals h1 {
+    font-size: 8vh;
+  }
+
+  .goals_grid {
+    display: block;
+    height: 68.82%;
+    margin-top: -0.5vh;
+    width: 100%;
+  }
+
+  .goals {
+    height: 19.6%;
+    border-radius: 9vh;
+    padding: 10vh;
+    padding-top: 7.6vh;
+  }
+
+  .goals h3 {
+    font-size: 8vh;
+  }
+
+  .goals h2 {
+    font-size: 6.1vh;
+    margin-bottom: 6vh;
+  }
+
+  .goals p {
+    font-size: 4vh;
+    width: auto;
+    line-height: 6vh;
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+}
 
 /* lauryno end */
 
