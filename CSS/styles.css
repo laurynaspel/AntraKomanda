@@ -726,6 +726,7 @@ a {
 /*div 2 --- "Why choose us?"" section --- end*/
 /*Gediminas end*/
 /* Div3 start*/
+
 .how-we-work-container {
   margin-top: 3.5vh;
   background-color: #f7f7f8;
@@ -765,7 +766,7 @@ a {
 }
 
 .grid-card p {
-  font-size:1.1vw ;
+  font-size: 1.1vw;
   margin: 0 0 8px 0;
   font-weight: 100;
   color: gray;
@@ -773,6 +774,7 @@ a {
 
 .border-card {
   border: 2px solid #b8b8b8;
+  transition: 0.5s;
 }
 
 .text-only h1 {
@@ -809,41 +811,38 @@ a {
   letter-spacing: 0.5px;
   line-height: 1.3;
 }
-.words{
+
+.words {
   padding-bottom: 0;
 }
-.appe{
+
+.appe {
   display: none;
 }
- 
-@media (max-width: 1080px) {
+.border-card:hover p {
+  color: white;
+  transition: 0.5s;
+  font-size: 1vw;
+}
+
+@media (max-width: 1580px) {
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .learn-more-btn{
-  margin-left: auto;
-  margin-right: auto;
-  }
-  .words{
-    line-height: 1vw;
-  }
-
-}
-
-@media (max-width: 600px) {
-  .work-grid {
-    grid-template-columns: 1fr;
-  }
 
   .learn-more-btn {
-    width: 120px;
-    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .words {
     line-height: 1vw;
   }
+
 }
-.border-card:hover{
+.border-card:hover {
   margin: 1vw 1vw 0 1vw;
-  background-color: rgb(101, 92,   224);
+  background-color: rgb(101, 92, 224);
   color: white;
   border: none;
   transition: 0.5s;
@@ -852,21 +851,93 @@ a {
   margin-bottom: -2.5vw;
   z-index: 3;
 }
-.side:hover{
-  margin: 1vw 0 0 1vw;
-  margin-bottom: -2.5vw;
+@media (max-width: 1080px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
 
+  .learn-more-btn {
+    width: 20vw;
+    height: 20vw;
+    line-height: 1vw;
+  }
+
+  .how-we-work-container {
+    padding: 43vw 4vw 0 4vw;
+  }
+
+  .section-title {
+    font-size: 7vw;
+    margin-bottom: 6vw;
+  }
+
+  .grid-card {
+    height: 27.3vw;
+    max-height: 30vw;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .text-only h1 {
+    font-size: 3.5vw;
+  }
+
+  .text-only {
+    padding-left: 0;
+    height: 16.5vw;
+  }
+
+  .border-card {
+    border-radius: 5vw;
+    padding: 5vw 0 0 4vw;
+
+  }
+
+  .border-card h3 {
+    font-size: 5vw;
+    padding-bottom: 3.2vw;
+  }
+  .border-card p{
+    font-size: 5vw;
+  }
+
+  .border-card .grid-card-text {
+    font-size: 4vw;
+  }
+
+  .border-card:hover {
+  margin: 5vw 1vw 0 1vw;
+  background-color: rgb(101, 92, 224);
+  max-height: 500vw;
+  height: 30vw;
+  color: white;
+  border: none;
+  transition: 0.5s;
+  margin-bottom: -2.5vw;
+  z-index: 3;
 }
 .border-card:hover p{
-  color: white;
-  transition:0.5s ;
-  font-size: 1vw;
+  font-size: 2vw;
 }
-.border-card:hover .appe{
+.learn-more-btn{
+  height: 30vw;
+  width: 30vw;
+  margin-top: 12vw;
+}
+.learn-more-btn span{
+font-size: 4vw;
+}
+}
+
+
+.border-card:hover .appe {
   display: flex;
   flex-direction: column;
 }
-/* DIV3 END */  
+
+/* DIV3 END */
 /* <!-- Div 4 start --> */
 .used-technologies-section {
   width: 100%;
