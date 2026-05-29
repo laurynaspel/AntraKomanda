@@ -733,6 +733,7 @@ a {
   padding: 7.8vw;
   box-sizing: border-box;
   margin: 0;
+  margin-left: 0.5vw;
 }
 
 .section-title {
@@ -798,6 +799,7 @@ a {
   border-radius: 50%;
   text-decoration: none;
   color: #1a1a1a;
+  margin-top: 5vw;
 }
 
 .learn-more-btn span {
