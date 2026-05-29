@@ -567,45 +567,57 @@ a {
 @media (max-width: 1080px) {
   .whatAreOurGoals {
     height: 26.7%;
-    margin-top: 20vh;
-    padding: 4vh;
+    margin-top: 16.7vh;
+    padding: 3.9vw;
     justify-content: flex-start;
   }
 
   .whatAreOurGoals h1 {
-    font-size: 8vh;
+    font-size: 7.35vw;
   }
 
   .goals_grid {
     display: block;
-    height: 68.82%;
+    height: 96.82%;
     margin-top: -0.5vh;
     width: 100%;
   }
 
   .goals {
-    height: 19.6%;
-    border-radius: 9vh;
-    padding: 10vh;
-    padding-top: 7.6vh;
+    height: 14%;
+    border-radius: 9vw;
+    padding: 9vw;
+    padding-top: 7.2vw;
+  }
+
+  .goals_div3,
+  .goals_div4,
+  .goals_div7 {
+    background-size: cover;
+    background-position: center;
+    height: 14.65%;
   }
 
   .goals h3 {
-    font-size: 8vh;
+    font-size: 7vw;
   }
 
   .goals h2 {
-    font-size: 6.1vh;
-    margin-bottom: 6vh;
+    font-size: 5.55vw;
+    margin-bottom: 5.1vw;
   }
 
   .goals p {
-    font-size: 4vh;
+    font-size: 3.66vw;
     width: auto;
-    line-height: 6vh;
+    line-height: 5.6vw;
     word-spacing: normal;
     letter-spacing: normal;
   }
+
+  .goals_div5 p,
+  .goals_div6 {}
+
 }
 
 /* lauryno end */
