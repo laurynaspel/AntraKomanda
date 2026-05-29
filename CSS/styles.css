@@ -131,7 +131,7 @@ header::before {
   position: absolute;
   inset: 0;
   background: rgba(47, 53, 63, 0.40);
-  z-index: 1;
+  z-index: -1;
 }
 
 header>* {
@@ -1305,7 +1305,7 @@ a {
   .form_column .input_group_file_upload {
     grid-row: auto;
   }
-
+}
   /* Div 5 end */
   /* Div 6 Start */
   .contact_section {
