@@ -126,20 +126,6 @@ body::before {
   }
 }
 
-/* lauryno start */
-/* header start */
-header {
-  position: relative;
-  width: 100%;
-  height: 99vh;
-  background-image: url(../IMG/HEADER/Img.png);
-  background-position: left;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-
 header::before {
   content: '';
   position: absolute;
@@ -819,6 +805,7 @@ a {
 .appe {
   display: none;
 }
+
 .border-card:hover p {
   color: white;
   transition: 0.5s;
@@ -840,6 +827,7 @@ a {
   }
 
 }
+
 .border-card:hover {
   margin: 1vw 1vw 0 1vw;
   background-color: rgb(101, 92, 224);
@@ -851,6 +839,7 @@ a {
   margin-bottom: -2.5vw;
   z-index: 3;
 }
+
 @media (max-width: 1080px) {
   .work-grid {
     grid-template-columns: 1fr;
@@ -899,7 +888,8 @@ a {
     font-size: 5vw;
     padding-bottom: 3.2vw;
   }
-  .border-card p{
+
+  .border-card p {
     font-size: 5vw;
   }
 
@@ -908,27 +898,30 @@ a {
   }
 
   .border-card:hover {
-  margin: 5vw 1vw 0 1vw;
-  background-color: rgb(101, 92, 224);
-  max-height: 500vw;
-  height: 30vw;
-  color: white;
-  border: none;
-  transition: 0.5s;
-  margin-bottom: -2.5vw;
-  z-index: 3;
-}
-.border-card:hover p{
-  font-size: 2vw;
-}
-.learn-more-btn{
-  height: 30vw;
-  width: 30vw;
-  margin-top: 12vw;
-}
-.learn-more-btn span{
-font-size: 4vw;
-}
+    margin: 5vw 1vw 0 1vw;
+    background-color: rgb(101, 92, 224);
+    max-height: 500vw;
+    height: 30vw;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    margin-bottom: -2.5vw;
+    z-index: 3;
+  }
+
+  .border-card:hover p {
+    font-size: 2vw;
+  }
+
+  .learn-more-btn {
+    height: 30vw;
+    width: 30vw;
+    margin-top: 12vw;
+  }
+
+  .learn-more-btn span {
+    font-size: 4vw;
+  }
 }
 
 
@@ -1237,94 +1230,244 @@ font-size: 4vw;
   height: 120px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 1.5rem;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+  background: transparent !important;
+  padding: 0.85rem 0 !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-family: 'TT Norms', sans-serif;
+  font-size: 1.85rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  letter-spacing: -0.01em;
 }
 
-.industry-icon img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
+.contact_form .plus_icon {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
 }
 
-.industry-card h3 {
-  font-size: 1.4vw;
-  font-weight: 400;
-  color: #2F353F;
-  font-family: 'Neue Machina';
-  margin: 0 0 1.5rem 0;
-  letter-spacing: -0.02em;
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid #2F353F;
-  width: 100%;
+.contact_form .input_group_file_upload input[type="file"] {
+  display: none !important;
 }
 
-.industry-card h3::after {
-  content: '';
-  display: none;
+.contact_form .btn_submit {
+  background: #ffffff !important;
+  color: #5D59F0 !important;
+  border: none !important;
+  padding: 1.25rem 4.5rem !important;
+  border-radius: 0.625rem !important;
+  font-family: 'TT Norms', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.875rem;
+  align-self: flex-start;
+  width: auto !important;
+  height: auto !important;
+  margin-left: 0;
+  margin-top: 0;
 }
 
-.industry-card p {
-  font-size: 1vw;
-  font-weight: 400;
-  color: #2F353F;
-  opacity: 0.7;
-  font-family: 'Gilroy';
-  line-height: 1.6;
-  margin: 1.5rem 0 0 0;
-  letter-spacing: 0;
-}
-
-/* Mobile Responsive - Industries Section */
-@media (max-width: 768px) {
-  .industries-section {
-    padding: 40px 16px;
-  }
-
-  .industries-section .section-header {
-    margin-bottom: 2rem;
-  }
-
-  .industries-section .section-header h2 {
-    font-size: 1.75rem;
-    font-family: 'Neue Machina';
-  }
-
-  .industries-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .industry-card {
-    width: 100%;
+@media (max-width: 1200px) {
+  .contact_section {
     height: auto;
-    padding: 0;
+    padding: 4rem 2rem;
   }
 
-  .industry-icon {
-    height: 80px;
-    margin-bottom: 1rem;
+  .contact_header {
+    flex-direction: column;
+    gap: 3rem;
   }
 
-  .industry-card h3 {
-    font-size: 1.1rem;
-    margin: 0 0 1rem 0;
-    padding-bottom: 1rem;
-    font-family: 'Neue Machina';
+  .title_area,
+  .info_area {
+    width: 100%;
   }
 
-  .industry-card p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 1rem 0 0 0;
-    font-family: 'Gilroy';
+  .title_area h1 {
+    font-size: 4.5rem;
+  }
+
+  .form_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form_column {
+    grid-template-rows: auto;
+    row-gap: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .form_column .input_group_file_upload {
+    grid-row: auto;
+  }
+
+  /* Div 5 end */
+  /* Div 6 Start */
+  .contact_section {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 116.25rem;
+    height: 62.75rem;
+    background: #5D59F0;
+    border-radius: 2.5rem;
+    padding: 7.05rem 6.25rem 5.5rem 6.65rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact_section .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .contact_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .title_area {
+    width: 44rem;
+    margin-left: 0rem;
+  }
+
+  .title_area h1 {
+    font-family: 'Neue Machina', sans-serif;
+    font-size: 6.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+
+  .info_area {
+    width: 43.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.85rem;
+    margin-top: 0.15rem;
+    margin-left: -0.15rem;
+  }
+
+  .info_area p {
+    font-family: 'TT Norms', sans-serif;
+    font-size: 1.65rem;
+    line-height: 1.45;
+    color: #ffffff;
+    opacity: 0.8;
+    letter-spacing: -0.01em;
+  }
+
+  .info_email {
+    color: #ffffff;
+    text-decoration: underline;
+    opacity: 1;
+  }
+
+  .btn_download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: flex-start;
+    margin-top: 0.15rem;
+    margin-left: 0rem;
+    padding: 0.95rem 2.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0.625rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'TT Norms', sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .btn_download:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+  }
+
+  .contact_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10.25rem;
+    width: 100%;
+    margin-bottom: 3.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .form_column {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3.5rem;
+    width: 100%;
+  }
+
+  .contact_form .input_group,
+  .contact_form .input_group_file_upload {
+    width: 100%;
+    margin: 0 !important;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+
+  .form_column .input_group_file_upload {
+    grid-row: 2;
+  }
+
+  .contact_form .input_group input {
+    width: 100%;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+    padding: 0.85rem 0 !important;
+    color: #ffffff !important;
+    font-family: 'TT Norms', sans-serif;
+    font-size: 1.85rem;
+    outline: none;
+    box-sizing: border-box;
+    letter-spacing: -0.01em;
+  }
+
+  .contact_form .input_group input::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+
+  .contact_form .input_group_file_upload label {
+    width: 100%;
+    width: 100%;
+    height: 99vh;
+    background-image: url(../IMG/HEADER/Img.png);
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
   }
 }
 
-/* Div 5 End */
-/* Emil end */
-
+/* Div 6 End */
 /* Footer Start */
 
 .main_footer {
