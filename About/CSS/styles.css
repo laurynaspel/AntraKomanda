@@ -8,80 +8,99 @@
 
 @font-face {
     font-family: 'Neue Machina';
-    src: url('../FONTS/NeueMachina-Light.otf') format('opentype');
+    src: url('../../FONTS/NeueMachina-Light.otf') format('opentype');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Neue Machina';
-    src: url('../FONTS/NeueMachina-Regular.otf') format('opentype');
+    src: url('../../FONTS/NeueMachina-Regular.otf') format('opentype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Neue Machina';
-    src: url('../FONTS/NeueMachina-Ultrabold.otf') format('opentype');
+    src: url('../../FONTS/NeueMachina-Ultrabold.otf') format('opentype');
     font-weight: 800;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Light.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Light.otf') format('opentype');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Regular.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Regular.otf') format('opentype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Italic.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Italic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Bold.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Bold.otf') format('opentype');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-BoldItalic.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-BoldItalic.otf') format('opentype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Black.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Black.otf') format('opentype');
     font-weight: 900;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-BlackItalic.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-BlackItalic.otf') format('opentype');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../FONTS/Gilroy-Light.otf') format('opentype');
+    src: url('../../FONTS/Gilroy-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../FONTS/Gilroy-ExtraBold.otf') format('opentype');
-    font-weight: 800;
+    src: url('../../FONTS/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
-    font-family: 'Neue Machina';
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
 }
 
 :root {
@@ -128,6 +147,7 @@ body::before {
 
 /* body done */
 
+/* navbar START */
 .navbar {
     display: flex;
     width: 97vw;
@@ -146,7 +166,7 @@ body::before {
     font-weight: 300;
 }
 
-/* logo start */
+/* logo START */
 .logo {
     width: 2.3vw;
     height: 2.5vw;
@@ -344,5 +364,83 @@ a {
     }
 }
 
+/* navbar END */
 
-/* navbar end */
+/* Who we are? START */
+
+header {
+    height: 52vw;
+    width: 84.5vw;
+    margin-top: 7vw;
+}
+
+header h1 {
+    font-size: 3.1vw;
+}
+
+.header_text_boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 6.5vw;
+    margin-top: 2.3vw;
+    height: 25vw;
+}
+
+.header_text p {
+    font-size: 1.56vw;
+    color: var(--main-gray);
+    font-family: "Gilroy";
+    font-weight: 400;
+    line-height: 2.3vw;
+}
+
+.header_text>p:first-child {
+    margin-bottom: 3vw;
+}
+
+.header_boxes {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2vw;
+}
+
+.box {
+    border: 0.05vw solid var(--main-gray);
+    border-radius: 2vw;
+    padding: 1.7vw;
+    padding-left: 2.6vw;
+}
+
+.header_boxes h3 {
+    color: var(--main-blue);
+    font-size: 3vw;
+}
+
+.header_boxes p {
+    font-size: 1.2vw;
+    color: var(--main-gray);
+    font-family: "Gilroy";
+    font-weight: 300;
+    margin-top: 2.5vw;
+}
+
+.box_4 p {
+    margin-top: 0.6vw;
+}
+
+.box:hover p,
+.box:hover h3 {
+    color: var(--main-white);
+}
+
+.box:hover {
+    background-color: var(--main-blue);
+}
+
+.box,
+.box h3,
+.box p {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
