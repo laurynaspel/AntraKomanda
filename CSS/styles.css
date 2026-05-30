@@ -417,7 +417,7 @@ a {
   .title {
     width: 81vw;
     height: 19.9%;
-    margin-top: -6vw;
+    margin-top: 58.7vw;
     margin-left: 2vw;
     font-size: 6vw;
     line-height: 15vw;
@@ -427,7 +427,6 @@ a {
   .header_btn {
     background-color: var(--main-blue);
     margin: auto;
-    margin-top: -17vh;
     margin-bottom: 14.1%;
     width: 30%;
     height: 13.5%;
@@ -439,7 +438,7 @@ a {
     font-size: 3.8vw;
     width: 18vw;
     height: 11vh;
-    margin-bottom: -2.4%;
+    margin-bottom: 5vw;
   }
 }
 
@@ -571,7 +570,7 @@ a {
 @media (max-width: 1080px) {
   .whatAreOurGoals {
     height: 26.7%;
-    margin-top: 16.7vh;
+    margin-top: 18vw;
     padding: 3.9vw;
     justify-content: flex-start;
   }

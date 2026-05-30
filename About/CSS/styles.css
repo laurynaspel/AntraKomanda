@@ -131,10 +131,10 @@ body::before {
 .navbar {
     display: flex;
     width: 97vw;
-    height: 12.2vh;
+    height: 6.2vw;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.1vw solid var(--main-gray);
+    border-bottom: 0.01vw solid var(--main-gray);
     font-weight: 300;
     margin-left: 0.6vw;
 }
@@ -149,8 +149,8 @@ body::before {
 /* logo start */
 .logo {
     width: 2.3vw;
-    height: 4.5vh;
-    margin-left: -0.1vw;
+    height: 2.5vw;
+    margin-left: -0.4vw;
     color: var(--main-gray);
     display: flex;
     align-items: center;
@@ -159,7 +159,7 @@ body::before {
 }
 
 .header_vector {
-    height: 4vh;
+    height: 2vw;
 }
 
 /* logo done */
@@ -193,7 +193,8 @@ ul {
 
 li {
     padding: 0 0.8vw;
-    margin-bottom: 0.2vh;
+    margin-bottom: 0.2vw;
+    margin-left: -0.2vw;
 }
 
 li:first-child {
@@ -207,22 +208,21 @@ a {
 }
 
 .active {
-    border: 0.2vh solid var(--main-blue);
-    border-radius: 1vh;
+    border: 0.1vw solid var(--main-blue);
+    border-radius: 0.5vw;
     padding: 0.2vw 0.85vw;
     color: var(--main-blue);
 }
 
 .nav_hr {
-    width: .1vw;
+    width: 0.01vw;
     background-color: var(--main-gray);
-    height: 12.3vh;
+    height: 6.3vw;
     border: none;
 }
 
 .nav_buttons {
     width: 25.2vw;
-    height: 12.2vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -232,19 +232,19 @@ a {
 .nav_buttons>a {
     color: var(--main-gray);
     font-family: "Neue Machina";
-    font-size: 2.4vh;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    padding-bottom: 0.5vh;
-    margin-right: 0.9vw;
+    padding-bottom: 0.6vw;
+    margin-right: 1.4vw;
 }
 
 .nav_buttons>a>img {
     width: 1.1vw;
-    height: 2.55vh;
-    margin-bottom: -0.45vh;
+    height: 2.55vw;
+    margin-bottom: -1vw;
     margin-left: 0.2vw;
 }
 
@@ -284,7 +284,6 @@ a {
     display: none;
 }
 
-/* navbar end */
 @media (max-width: 1080px) {
     .main_menu {
         height: 10%;
@@ -340,3 +339,6 @@ a {
         margin-top: 2.5vw;
     }
 }
+
+
+/* navbar end */
