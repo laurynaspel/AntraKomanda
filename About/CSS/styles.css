@@ -175,6 +175,7 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: center;
     align-content: center;
 }
 
@@ -185,6 +186,7 @@ body::before {
 /* logo done */
 nav {
     width: 59.52vw;
+    width: 59.52vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -194,6 +196,7 @@ nav {
 ul,
 li {
     display: flex;
+    gap: 4.35vw;
     gap: 4.35vw;
     align-items: center;
     color: var(--main-gray);
@@ -207,6 +210,7 @@ li {
 
 ul {
     display: flex;
+    width: 33.77vw;
     width: 33.77vw;
     justify-content: flex-start;
 }
@@ -311,6 +315,7 @@ a {
 
     .navbar {
         height: 16.5%;
+        height: 16.5%;
         justify-content: space-between;
         padding: 0 1.9vw;
         border: none;
@@ -325,6 +330,7 @@ a {
         padding: 2.6vw;
         padding-bottom: 2.6vw;
         background-color: var(--main-blue);
+        background-color: var(--main-blue);
         border-radius: 2vw;
         margin-top: -5px;
     }
@@ -333,6 +339,7 @@ a {
         display: block;
         padding: 2.6vw;
         padding-bottom: 2.6vw;
+        background-color: var(--main-blue);
         background-color: var(--main-blue);
         border-radius: 2vw;
         margin-top: -5px;
