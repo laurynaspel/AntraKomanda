@@ -130,7 +130,7 @@ body::before {
 
 .navbar {
     display: flex;
-    width: 96.5vw;
+    width: 97vw;
     height: 12.2vh;
     justify-content: space-between;
     align-items: center;
@@ -148,41 +148,23 @@ body::before {
 
 /* logo start */
 .logo {
-    width: 11vw;
-    height: 7vh;
+    width: 2.3vw;
+    height: 4.5vh;
     margin-left: -0.1vw;
     color: var(--main-gray);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
-
-}
-
-.logo_text {
-    width: 7vw;
-    height: 5vh;
-    color: var(--main-gray);
-    font-family: "TT Norms";
-    font-size: 1.16vw;
-    font-style: normal;
-    letter-spacing: 0.07vw;
-    font-weight: 600;
-    line-height: 1.3vw;
-    display: flex;
-    align-items: center;
-    margin-top: 1.5vh;
-    margin-right: 1vh;
 }
 
 .header_vector {
-    display: flex;
-    height: 6.2vh;
+    height: 4vh;
 }
 
 /* logo done */
 nav {
-    width: 61.5vw;
+    width: 59.52vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -192,11 +174,10 @@ nav {
 ul,
 li {
     display: flex;
-    gap: 6.1vw;
+    gap: 4.35vw;
     align-items: center;
     color: var(--main-gray);
     font-family: "Neue Machina";
-    font-size: 1.28vw;
     font-style: normal;
     line-height: normal;
     text-transform: lowercase;
@@ -206,14 +187,30 @@ li {
 
 ul {
     display: flex;
-    width: 36vw;
+    width: 33.77vw;
     justify-content: flex-start;
+}
+
+li {
+    padding: 0 0.8vw;
+    margin-bottom: 0.2vh;
+}
+
+li:first-child {
+    padding: 0;
 }
 
 a {
     text-decoration: none;
     color: var(--main-gray);
-    font-size: 1.28vw;
+    font-size: 1.1vw;
+}
+
+.active {
+    border: 0.2vh solid var(--main-blue);
+    border-radius: 1vh;
+    padding: 0.2vw 0.85vw;
+    color: var(--main-blue);
 }
 
 .nav_hr {
@@ -283,17 +280,18 @@ a {
     display: none;
 }
 
-/* header end */
+.logo_text {
+    display: none;
+}
+
+/* navbar end */
 @media (max-width: 1080px) {
-    header {
-        background-image: url(../img/HEADER/main_mobile.png);
-        background-position: center;
-        height: 12.45%;
-        width: 1080px;
+    .main_menu {
+        height: 10%;
     }
 
     .navbar {
-        height: 13.5%;
+        height: 16.5%;
         justify-content: space-between;
         padding: 0 1.9vw;
         border: none;
@@ -307,7 +305,7 @@ a {
         display: block;
         padding: 2.6vw;
         padding-bottom: 2.6vw;
-        background-color: var(--main-white);
+        background-color: var(--main-blue);
         border-radius: 2vw;
         margin-top: -5px;
     }
@@ -316,7 +314,7 @@ a {
         display: block;
         padding: 2.6vw;
         padding-bottom: 2.6vw;
-        background-color: var(--main-white);
+        background-color: var(--main-blue);
         border-radius: 2vw;
         margin-top: -5px;
     }
@@ -334,6 +332,7 @@ a {
     }
 
     .logo_text {
+        display: block;
         height: 11vw;
         width: 20.5vw;
         font-size: 4vw;
