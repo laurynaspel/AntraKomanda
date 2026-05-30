@@ -819,6 +819,7 @@ a {
 .appe {
   display: none;
 }
+
 .border-card:hover p {
   color: white;
   transition: 0.5s;
@@ -840,6 +841,7 @@ a {
   }
 
 }
+
 .border-card:hover {
   margin: 1vw 1vw 0 1vw;
   background-color: rgb(101, 92, 224);
@@ -851,6 +853,7 @@ a {
   margin-bottom: -2.5vw;
   z-index: 3;
 }
+
 @media (max-width: 1080px) {
   .work-grid {
     grid-template-columns: 1fr;
@@ -899,7 +902,8 @@ a {
     font-size: 5vw;
     padding-bottom: 3.2vw;
   }
-  .border-card p{
+
+  .border-card p {
     font-size: 5vw;
   }
 
@@ -908,27 +912,30 @@ a {
   }
 
   .border-card:hover {
-  margin: 5vw 1vw 0 1vw;
-  background-color: rgb(101, 92, 224);
-  max-height: 500vw;
-  height: 30vw;
-  color: white;
-  border: none;
-  transition: 0.5s;
-  margin-bottom: -2.5vw;
-  z-index: 3;
-}
-.border-card:hover p{
-  font-size: 2vw;
-}
-.learn-more-btn{
-  height: 30vw;
-  width: 30vw;
-  margin-top: 12vw;
-}
-.learn-more-btn span{
-font-size: 4vw;
-}
+    margin: 5vw 1vw 0 1vw;
+    background-color: rgb(101, 92, 224);
+    max-height: 500vw;
+    height: 30vw;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    margin-bottom: -2.5vw;
+    z-index: 3;
+  }
+
+  .border-card:hover p {
+    font-size: 2vw;
+  }
+
+  .learn-more-btn {
+    height: 30vw;
+    width: 30vw;
+    margin-top: 12vw;
+  }
+
+  .learn-more-btn span {
+    font-size: 4vw;
+  }
 }
 
 
