@@ -108,7 +108,7 @@
     --main-white: #ffffff;
     --main-gray: #2F353F;
     --main-purple: #9695E7;
-    --main-light: #CBCAF3;
+    --main-light: #C1C2C5;
 }
 
 body {
@@ -450,4 +450,70 @@ header h1 {
 .box h3,
 .box p {
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header_circles {
+    margin-top: 11vw;
+    height: 9.5vw;
+    display: flex;
+}
+
+.circle {
+    border: 2px solid var(--main-white);
+    height: 9.5vw;
+    min-width: 9.5vw;
+    border-radius: 100%;
+    margin-left: -2.65vw;
+}
+
+.circle_1 {
+    margin-left: 0;
+    background-color: var(--main-gray);
+}
+
+.circle_2 {
+    background-color: var(--main-light);
+}
+
+.circle_3 {
+    background-color: var(--main-blue);
+}
+
+.circle_4 {
+    background-color: var(--main-gray);
+}
+
+.circle_5 {
+    background-color: var(--main-light);
+}
+
+.circle_6 {
+    background-color: var(--main-blue);
+}
+
+.circle_7 {
+    background-color: var(--main-gray);
+}
+
+.circle_8 {
+    background-color: var(--main-light);
+}
+
+.circle_9 {
+    background-color: var(--main-blue);
+}
+
+.circle_10 {
+    background-color: var(--main-gray);
+}
+
+.circle_11 {
+    background-color: var(--main-light);
+}
+
+.circle_12 {
+    background-color: #9695E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

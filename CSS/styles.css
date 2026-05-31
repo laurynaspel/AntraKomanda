@@ -7,82 +7,102 @@
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url('../FONTS/NeueMachina-Light.otf') format('opentype');
-  font-weight: 300;
+    font-family: 'Neue Machina';
+    src: url('../../FONTS/NeueMachina-Light.otf') format('opentype');
+    font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url('../FONTS/NeueMachina-Regular.otf') format('opentype');
-  font-weight: 400;
+    font-family: 'Neue Machina';
+    src: url('../../FONTS/NeueMachina-Regular.otf') format('opentype');
+    font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url('../FONTS/NeueMachina-Ultrabold.otf') format('opentype');
-  font-weight: 800;
+    font-family: 'Neue Machina';
+    src: url('../../FONTS/NeueMachina-Ultrabold.otf') format('opentype');
+    font-weight: 800;
 }
 
 @font-face {
-  font-family: 'TT Norms';
-  src: url('../FONTS/TTNorms-Light.otf') format('opentype');
-  font-weight: 300;
+    font-family: 'TT Norms';
+    src: url('../../FONTS/TTNorms-Light.otf') format('opentype');
+    font-weight: 300;
 }
 
 @font-face {
-  font-family: 'TT Norms';
-  src: url('../FONTS/TTNorms-Regular.otf') format('opentype');
-  font-weight: 400;
+    font-family: 'TT Norms';
+    src: url('../../FONTS/TTNorms-Regular.otf') format('opentype');
+    font-weight: 400;
 }
 
 @font-face {
-  font-family: 'TT Norms';
-  src: url('../FONTS/TTNorms-Italic.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
+    font-family: 'TT Norms';
+    src: url('../../FONTS/TTNorms-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'TT Norms';
-  src: url('../FONTS/TTNorms-Bold.otf') format('opentype');
-  font-weight: 700;
+    font-family: 'TT Norms';
+    src: url('../../FONTS/TTNorms-Bold.otf') format('opentype');
+    font-weight: 700;
 }
 
 @font-face {
-  font-family: 'TT Norms';
-  src: url('../FONTS/TTNorms-BoldItalic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
+    font-family: 'TT Norms';
+    src: url('../../FONTS/TTNorms-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'TT Norms';
-  src: url('../FONTS/TTNorms-Black.otf') format('opentype');
-  font-weight: 900;
+    font-family: 'TT Norms';
+    src: url('../../FONTS/TTNorms-Black.otf') format('opentype');
+    font-weight: 900;
 }
 
 @font-face {
-  font-family: 'TT Norms';
-  src: url('../FONTS/TTNorms-BlackItalic.otf') format('opentype');
-  font-weight: 900;
-  font-style: italic;
+    font-family: 'TT Norms';
+    src: url('../../FONTS/TTNorms-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('../FONTS/Gilroy-Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('../FONTS/Gilroy-ExtraBold.otf') format('opentype');
-  font-weight: 800;
-  font-style: normal;
-  font-family: 'Neue Machina';
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
+}
+
 
 :root {
   --main-blue: #2E2BD0;
@@ -118,6 +138,7 @@ body::before {
   mix-blend-mode: multiply;
   z-index: -9999;
   overflow-x: hidden;
+  width: 100%;
 }
 
 @media (max-width: 1080px) {
