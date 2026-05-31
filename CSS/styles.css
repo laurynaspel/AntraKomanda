@@ -1043,7 +1043,7 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   width: 100%;
   padding-bottom: 0;
   position: relative;
@@ -1052,7 +1052,7 @@ a {
 .tech-track::before {
   content: '';
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 0;
   right: 0;
   height: 1px;
@@ -1062,19 +1062,19 @@ a {
 
 .tech-item {
   position: relative;
-  flex: 0 1 185px;
-  max-width: 185px;
+  flex: 0 1 150px;
+  max-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 0.8rem;
   z-index: 1;
 }
 
 .tech-item .tech-dot {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #bfbfbf;
   position: relative;
@@ -1087,9 +1087,9 @@ a {
 }
 
 .tech-label {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.3;
   color: #1a1a2e;
   opacity: 0.9;
   margin: 0;
@@ -1098,10 +1098,10 @@ a {
 }
 
 .tech-icon-box {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border: 1px solid #5a56e9;
-  border-radius: 18px;
+  border-radius: 14px;
   background: #ffffff;
   display: flex;
   align-items: center;
@@ -1262,8 +1262,8 @@ a {
   gap: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 506px;
-  height: 460px;
+  width: 100%;
+  height: auto;
 }
 
 .industry-icon {
