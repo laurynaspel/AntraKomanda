@@ -522,6 +522,8 @@ header h1 {
     display: none;
 }
 
+/* header media quaries end */
+
 @media (max-width: 1080px) {
     header {
         margin-top: 6vw;
@@ -588,15 +590,18 @@ header h1 {
         height: 24.5vw;
         margin-top: 10.5vw;
     }
-    .circle{
+
+    .circle {
         height: 25vw;
         width: 25vw;
         margin-left: -8vw;
         border: 0.5vw solid var(--main-white);
     }
-    .circle_1{
+
+    .circle_1 {
         margin-left: 0;
     }
+
     .circle_6,
     .circle_7,
     .circle_8,
@@ -606,4 +611,81 @@ header h1 {
     .circle_5 {
         display: none;
     }
+}
+
+/* header media quaries end */
+
+/* our team start */
+
+.Our_Team {
+    width: 97vw;
+    height: 100vw;
+    margin-top: 15.5vw;
+}
+
+.Our_Team h1 {
+    font-size: 3.1vw;
+    margin-left: 6.4vw;
+}
+
+.team_text {
+    width: 36.1vw;
+    height: 14vw;
+    display: flex;
+    margin-left: 45.5vw;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+
+.team_text p {
+    font-family: "Gilroy";
+    font-size: 1.25vw;
+    line-height: 1.8vw;
+}
+
+.Our_Team img {
+    width: 97vw;
+    height: 47.5vw;
+    border: 0.1vw solid black;
+    border-radius: 4vw;
+}
+
+.our_team_boxes {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 90vw;
+    height: 30vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+
+.teambox {
+    padding: 4.2vw;
+    padding-left: 4.5vw;
+}
+
+.teambox_2 {
+    border-left: 0.05vw solid var(--main-blue);
+    border-right: 0.05vw solid var(--main-blue);
+}
+
+.teambox_3 {
+    padding-right: 1.3vw;
+}
+
+.teambox h3 {
+    color: var(--main-blue);
+    font-size: 3vw;
+}
+
+.teambox h4 {
+    margin-top: 5vw;
+    font-size: 3.1vw;
+}
+
+.teambox p {
+    margin-top: 3vw;
+    font-family: "Gilroy";
+    font-size: 1.55vw;
 }
