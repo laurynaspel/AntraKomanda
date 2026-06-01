@@ -690,7 +690,87 @@ header h1 {
     font-size: 1.55vw;
 }
 
+@media (max-width: 1080px) {
+    .Our_Team {
+        width: 92.5vw;
+        margin-top: 22vw;
+    }
+
+    .Our_Team h1 {
+        font-size: 7.5vw;
+        margin-left: 0;
+    }
+
+    .team_text {
+        width: 90vw;
+        height: 23vw;
+        margin-left: 0;
+        font-size: 5vw;
+        margin-top: 9vw;
+    }
+
+    .team_text p {
+        font-size: 3.7vw;
+        line-height: 5.5vw;
+    }
+
+    .br_team_text {
+        display: none;
+    }
+
+    .Our_Team img {
+        margin-top: 8vw;
+        height: 66.5vw;
+        border-radius: 8vw;
+        width: 92.5vw;
+    }
+
+    .our_team_boxes {
+        margin-top: 2vw;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        height: 188vw;
+        width: 93vw;
+        margin-left: 0;
+    }
+
+    .teambox {
+        padding: 8.7vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .teambox h3 {
+        font-size: 7.3vw;
+    }
+
+    .teambox h4 {
+        margin-top: 9vw;
+        font-size: 5.5vw;
+    }
+
+    .teambox p {
+        font-size: 4.61vw;
+        margin-top: 3.5vw;
+        line-height: 6.3vw;
+    }
+
+    .teambox_2 {
+        border-left: none;
+        border-right: none;
+        border-top: 0.1vw solid var(--main-blue);
+        border-bottom: 0.1vw solid var(--main-blue);
+    }
+
+    .teambox_3 {
+        padding-top: 11.6vw;
+    }
+}
+
+/* Our team end */
+
 /* Div 6 Start */
+
 .contact_section {
     position: relative;
     width: 116.25rem;
@@ -704,6 +784,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     transform: translate(0px, -14px);
+    margin-top: 200vw;
 }
 
 .contact_section .container {
