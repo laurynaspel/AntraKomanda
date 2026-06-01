@@ -51,7 +51,7 @@
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../../../FONTS/TTNorms-BoldItalic.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-BoldItalic.otf') format('opentype');
     font-weight: 700;
     font-style: italic;
 }
