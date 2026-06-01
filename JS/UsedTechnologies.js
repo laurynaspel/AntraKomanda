@@ -1,20 +1,20 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function() {
-	var section = document.querySelector('.used-technologies-section');
+	let section = document.querySelector('.used-technologies-section');
 	if (!section) {
 		return;
 	}
 
-	var items = document.querySelectorAll('.tech-item');
-	var iconBox = document.querySelector('.tech-icon-box');
+	let items = document.querySelectorAll('.tech-item');
+	let iconBox = document.querySelector('.tech-icon-box');
 	
 	if (items.length > 0) {
 		setActiveItem(items[0]);
 	}
 
-	for (var i = 0; i < items.length; i++) {
-		var item = items[i];
+	for (let i = 0; i < items.length; i++) {
+		let item = items[i];
 		item.style.cursor = 'pointer';
 		
 		item.addEventListener('click', function(event) {
@@ -24,22 +24,22 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 	function setActiveItem(selectedItem) {
-		for (var i = 0; i < items.length; i++) {
+		for (let i = 0; i < items.length; i++) {
 			items[i].classList.remove('active');
-			var textLabel = items[i].querySelector('.tech-label');
+			let textLabel = items[i].querySelector('.tech-label');
 			if (textLabel) {
 				textLabel.style.fontSize = '1rem';
 			}
 		}
 
 		selectedItem.classList.add('active');
-		var activeLabel = selectedItem.querySelector('.tech-label');
+		let activeLabel = selectedItem.querySelector('.tech-label');
 		if (activeLabel) {
 			activeLabel.style.fontSize = 'calc(1rem * 1.2)';
 		}
 
 		if (iconBox) {
-			var iconAlreadyInItem = selectedItem.querySelector('.tech-icon-box');
+			let iconAlreadyInItem = selectedItem.querySelector('.tech-icon-box');
 			if (!iconAlreadyInItem) {
 				selectedItem.appendChild(iconBox);
 			}
