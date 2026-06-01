@@ -127,7 +127,7 @@ body::before {
     position: fixed;
     inset: 0;
     background:
-        url('../IMG/BG_Noise.png') repeat;
+        url('../../IMG/BG_Noise.png') repeat;
     opacity: 0.05;
     filter: brightness(50%);
     mix-blend-mode: multiply;
