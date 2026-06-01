@@ -8,80 +8,99 @@
 
 @font-face {
     font-family: 'Neue Machina';
-    src: url('../FONTS/NeueMachina-Light.otf') format('opentype');
+    src: url('../../FONTS/NeueMachina-Light.otf') format('opentype');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Neue Machina';
-    src: url('../FONTS/NeueMachina-Regular.otf') format('opentype');
+    src: url('../../FONTS/NeueMachina-Regular.otf') format('opentype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Neue Machina';
-    src: url('../FONTS/NeueMachina-Ultrabold.otf') format('opentype');
+    src: url('../../FONTS/NeueMachina-Ultrabold.otf') format('opentype');
     font-weight: 800;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Light.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Light.otf') format('opentype');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Regular.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Regular.otf') format('opentype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Italic.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Italic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Bold.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Bold.otf') format('opentype');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-BoldItalic.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-BoldItalic.otf') format('opentype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-Black.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-Black.otf') format('opentype');
     font-weight: 900;
 }
 
 @font-face {
     font-family: 'TT Norms';
-    src: url('../FONTS/TTNorms-BlackItalic.otf') format('opentype');
+    src: url('../../FONTS/TTNorms-BlackItalic.otf') format('opentype');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../FONTS/Gilroy-Light.otf') format('opentype');
+    src: url('../../FONTS/Gilroy-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../FONTS/Gilroy-ExtraBold.otf') format('opentype');
-    font-weight: 800;
+    src: url('../../FONTS/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
-    font-family: 'Neue Machina';
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../../FONTS/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
 }
 
 :root {
@@ -89,7 +108,7 @@
     --main-white: #ffffff;
     --main-gray: #2F353F;
     --main-purple: #9695E7;
-    --main-light: #CBCAF3;
+    --main-light: #C1C2C5;
 }
 
 body {
@@ -128,13 +147,14 @@ body::before {
 
 /* body done */
 
+/* navbar START */
 .navbar {
     display: flex;
-    width: 96.5vw;
-    height: 12.2vh;
+    width: 97vw;
+    height: 6.2vw;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.1vw solid var(--main-gray);
+    border-bottom: 0.01vw solid var(--main-gray);
     font-weight: 300;
     margin-left: 0.6vw;
 }
@@ -142,47 +162,31 @@ body::before {
 .main_menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     font-weight: 300;
 }
 
-/* logo start */
+/* logo START */
 .logo {
-    width: 11vw;
-    height: 7vh;
-    margin-left: -0.1vw;
+    width: 2.3vw;
+    height: 2.5vw;
+    margin-left: -0.4vw;
     color: var(--main-gray);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    justify-content: center;
     align-content: center;
-
-}
-
-.logo_text {
-    width: 7vw;
-    height: 5vh;
-    color: var(--main-gray);
-    font-family: "TT Norms";
-    font-size: 1.16vw;
-    font-style: normal;
-    letter-spacing: 0.07vw;
-    font-weight: 600;
-    line-height: 1.3vw;
-    display: flex;
-    align-items: center;
-    margin-top: 1.5vh;
-    margin-right: 1vh;
 }
 
 .header_vector {
-    display: flex;
-    height: 6.2vh;
+    height: 2vw;
 }
 
 /* logo done */
 nav {
-    width: 61.5vw;
+    width: 59.52vw;
+    width: 59.52vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -192,11 +196,11 @@ nav {
 ul,
 li {
     display: flex;
-    gap: 6.1vw;
+    gap: 4.35vw;
+    gap: 4.35vw;
     align-items: center;
     color: var(--main-gray);
     font-family: "Neue Machina";
-    font-size: 1.28vw;
     font-style: normal;
     line-height: normal;
     text-transform: lowercase;
@@ -206,26 +210,43 @@ li {
 
 ul {
     display: flex;
-    width: 36vw;
+    width: 33.77vw;
+    width: 33.77vw;
     justify-content: flex-start;
+}
+
+li {
+    padding: 0 0.8vw;
+    margin-bottom: 0.2vw;
+    margin-left: -0.2vw;
+}
+
+li:first-child {
+    padding: 0;
 }
 
 a {
     text-decoration: none;
     color: var(--main-gray);
-    font-size: 1.28vw;
+    font-size: 1.1vw;
+}
+
+.active {
+    border: 0.1vw solid var(--main-blue);
+    border-radius: 0.5vw;
+    padding: 0.2vw 0.85vw;
+    color: var(--main-blue);
 }
 
 .nav_hr {
-    width: .1vw;
+    width: 0.01vw;
     background-color: var(--main-gray);
-    height: 12.3vh;
+    height: 6.3vw;
     border: none;
 }
 
 .nav_buttons {
     width: 25.2vw;
-    height: 12.2vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -235,19 +256,19 @@ a {
 .nav_buttons>a {
     color: var(--main-gray);
     font-family: "Neue Machina";
-    font-size: 2.4vh;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    padding-bottom: 0.5vh;
-    margin-right: 0.9vw;
+    padding-bottom: 0.6vw;
+    margin-right: 1.4vw;
 }
 
 .nav_buttons>a>img {
     width: 1.1vw;
-    height: 2.55vh;
-    margin-bottom: -0.45vh;
+    height: 2.55vw;
+    margin-bottom: -1vw;
     margin-left: 0.2vw;
 }
 
@@ -256,21 +277,21 @@ a {
     background-color: var(--main-blue);
     color: var(--main-white);
     border: none;
-    border-radius: 1vh;
+    border-radius: 0.6vw;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 2vh;
+    font-size: 1vw;
     width: 12.8vw;
-    height: 6vh;
-    padding-bottom: 0.4vh;
-    padding-left: 0.1vw;
+    height: 3vw;
+    padding-bottom: 0.2vw;
+    font-weight: 300;
 }
 
 .nav_btn img {
     width: 1.3vw;
-    height: 2.5vh;
-    margin-right: -1vh;
-    margin-bottom: -0.3vh;
+    height: 2.5vw;
+    margin-right: -0.3vw;
+    margin-bottom: -0.3vw;
     margin-left: -1vw;
 }
 
@@ -283,17 +304,18 @@ a {
     display: none;
 }
 
-/* header end */
+.logo_text {
+    display: none;
+}
+
 @media (max-width: 1080px) {
-    header {
-        background-image: url(../img/HEADER/main_mobile.png);
-        background-position: center;
-        height: 12.45%;
-        width: 1080px;
+    .main_menu {
+        height: 30vw;
     }
 
     .navbar {
-        height: 13.5%;
+        height: 16.5%;
+        height: 16.5%;
         justify-content: space-between;
         padding: 0 1.9vw;
         border: none;
@@ -307,7 +329,8 @@ a {
         display: block;
         padding: 2.6vw;
         padding-bottom: 2.6vw;
-        background-color: var(--main-white);
+        background-color: var(--main-blue);
+        background-color: var(--main-blue);
         border-radius: 2vw;
         margin-top: -5px;
     }
@@ -316,7 +339,8 @@ a {
         display: block;
         padding: 2.6vw;
         padding-bottom: 2.6vw;
-        background-color: var(--main-white);
+        background-color: var(--main-blue);
+        background-color: var(--main-blue);
         border-radius: 2vw;
         margin-top: -5px;
     }
@@ -329,15 +353,708 @@ a {
     .header_vector {
         height: 11vw;
         width: 31%;
-        margin-left: 0.5vh;
-        margin-bottom: 0.5vh;
+        margin-left: -1.6vw;
+        margin-bottom: 0.5vw;
     }
 
     .logo_text {
+        font-family: "TT Norms";
+        font-weight: 700;
+        display: block;
         height: 11vw;
         width: 20.5vw;
         font-size: 4vw;
         line-height: 110%;
-        margin-top: 2.5vw;
+        margin-top: 5vw;
+        margin-left: 1.4vw;
+        margin-right: -0.7vw;
     }
 }
+
+/* navbar END */
+
+/* Who we are? START */
+
+header {
+    height: 52vw;
+    width: 84.5vw;
+    margin-top: 7vw;
+}
+
+header h1 {
+    font-size: 3.1vw;
+}
+
+.header_text_boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 6.5vw;
+    margin-top: 2.3vw;
+    height: 25vw;
+}
+
+.header_text p {
+    font-size: 1.56vw;
+    color: var(--main-gray);
+    font-family: "Gilroy";
+    font-weight: 400;
+    line-height: 2.3vw;
+}
+
+.header_text>p:first-child {
+    margin-bottom: 3vw;
+}
+
+.header_boxes {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2vw;
+}
+
+.box {
+    border: 0.05vw solid var(--main-gray);
+    border-radius: 2vw;
+    padding: 1.7vw;
+    padding-left: 2.6vw;
+}
+
+.header_boxes h3 {
+    color: var(--main-blue);
+    font-size: 3vw;
+}
+
+.header_boxes p {
+    font-size: 1.2vw;
+    color: var(--main-gray);
+    font-family: "Gilroy";
+    font-weight: 300;
+    margin-top: 2.5vw;
+}
+
+.box_4 p {
+    margin-top: 0.6vw;
+}
+
+.box:hover p,
+.box:hover h3 {
+    color: var(--main-white);
+}
+
+.box:hover {
+    background-color: var(--main-blue);
+}
+
+.box,
+.box h3,
+.box p {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header_circles {
+    margin-top: 11vw;
+    height: 9.5vw;
+    display: flex;
+}
+
+.circle {
+    border: 2px solid var(--main-white);
+    height: 9.5vw;
+    min-width: 9.5vw;
+    border-radius: 100%;
+    margin-left: -2.65vw;
+}
+
+.circle_1 {
+    margin-left: 0;
+    background-color: var(--main-gray);
+}
+
+.circle_2 {
+    background-color: var(--main-light);
+}
+
+.circle_3 {
+    background-color: var(--main-blue);
+}
+
+.circle_4 {
+    background-color: var(--main-gray);
+}
+
+.circle_5 {
+    background-color: var(--main-light);
+}
+
+.circle_6 {
+    background-color: var(--main-blue);
+}
+
+.circle_7 {
+    background-color: var(--main-gray);
+}
+
+.circle_8 {
+    background-color: var(--main-light);
+}
+
+.circle_9 {
+    background-color: var(--main-blue);
+}
+
+.circle_10 {
+    background-color: var(--main-gray);
+}
+
+.circle_11 {
+    background-color: var(--main-light);
+}
+
+.circle_12 {
+    background-color: #9695E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile_header_h1 {
+    display: none;
+}
+
+/* header media quaries end */
+
+@media (max-width: 1080px) {
+    header {
+        margin-top: 6vw;
+        width: 92.5vw;
+        height: 348vw;
+    }
+
+    header h1 {
+        font-size: 7.4vw;
+    }
+
+    .desktop_header_h1 {
+        display: none;
+    }
+
+    .mobile_header_h1 {
+        display: block;
+    }
+
+    .header_text_boxes {
+        display: block;
+        height: 295vw;
+        margin-top: 9vw;
+    }
+
+    .header_text p {
+        font-size: 3.69vw;
+        line-height: 5.5vw;
+    }
+
+    .header_text p:first-child {
+        margin-bottom: 6vw;
+    }
+
+    .header_boxes {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding-left: 0;
+        margin-top: 9.5vw;
+        height: 231vw;
+    }
+
+    .box {
+        border-radius: 8vw;
+        padding: 4.5vw;
+        padding-left: 9.2vw;
+    }
+
+    .box h3 {
+        font-size: 16vw;
+    }
+
+    .box p {
+        font-size: 4.6vw;
+        margin-top: 16vw;
+        line-height: 7vw;
+    }
+
+    .box_4 p {
+        margin-top: 9vw;
+    }
+
+    .header_circles {
+        height: 24.5vw;
+        margin-top: 10.5vw;
+    }
+
+    .circle {
+        height: 25vw;
+        width: 25vw;
+        margin-left: -8vw;
+        border: 0.5vw solid var(--main-white);
+    }
+
+    .circle_1 {
+        margin-left: 0;
+    }
+
+    .circle_6,
+    .circle_7,
+    .circle_8,
+    .circle_9,
+    .circle_10,
+    .circle_11,
+    .circle_5 {
+        display: none;
+    }
+}
+
+/* header media quaries end */
+
+/* our team start */
+
+.Our_Team {
+    width: 97vw;
+    height: 100vw;
+    margin-top: 15.5vw;
+}
+
+.Our_Team h1 {
+    font-size: 3.1vw;
+    margin-left: 6.4vw;
+}
+
+.team_text {
+    width: 36.1vw;
+    height: 14vw;
+    display: flex;
+    margin-left: 45.5vw;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+
+.team_text p {
+    font-family: "Gilroy";
+    font-size: 1.25vw;
+    line-height: 1.8vw;
+}
+
+.Our_Team img {
+    width: 97vw;
+    height: 47.5vw;
+    border: 0.1vw solid black;
+    border-radius: 4vw;
+}
+
+.our_team_boxes {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 90vw;
+    height: 30vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+
+.teambox {
+    padding: 4.2vw;
+    padding-left: 4.5vw;
+}
+
+.teambox_2 {
+    border-left: 0.05vw solid var(--main-blue);
+    border-right: 0.05vw solid var(--main-blue);
+}
+
+.teambox_3 {
+    padding-right: 1.3vw;
+}
+
+.teambox h3 {
+    color: var(--main-blue);
+    font-size: 3vw;
+}
+
+.teambox h4 {
+    margin-top: 5vw;
+    font-size: 3.1vw;
+}
+
+.teambox p {
+    margin-top: 3vw;
+    font-family: "Gilroy";
+    font-size: 1.55vw;
+}
+
+/* Div 6 Start */
+.contact_section {
+  position: relative;
+  width: 116.25rem;
+  height: 62.75rem;
+  background: #5D59F0;
+  border-radius: 2.5rem;
+  padding: 7.05rem 6.25rem 5.5rem 6.65rem;
+  box-sizing: border-box;
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0px, -14px); 
+}
+
+.contact_section .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.contact_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.title_area {
+  width: 44rem;
+  margin-left: 0rem;
+}
+
+.title_area h1 {
+  font-family: 'Neue Machina', sans-serif;
+  font-size: 6.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.info_area {
+  width: 43.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.85rem;
+  margin-top: 0.15rem;
+  margin-left: -0.15rem;
+}
+
+.info_area p {
+  font-family: 'TT Norms', sans-serif;
+  font-size: 1.65rem;
+  line-height: 1.45;
+  color: #ffffff;
+  opacity: 0.8;
+  letter-spacing: -0.01em;
+}
+
+.info_email {
+  color: #ffffff;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.btn_download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: flex-start;
+  margin-top: 0.15rem;
+  margin-left: 0rem;
+  padding: 0.95rem 2.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.625rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'TT Norms', sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn_download:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.contact_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 100%;
+  margin-bottom: 3.5rem;
+  margin-top: 1.25rem;
+}
+
+.form_column {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 50%;
+}
+
+.contact_form .input_group,
+.contact_form .input_group_file_upload {
+  width: 100%;
+  margin: 0 !important;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.form_column .input_group_file_upload {
+  grid-row: auto;
+}
+
+.contact_form .input_group input {
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+  padding: 0.85rem 0 !important;
+  color: #ffffff !important;
+  font-family: 'TT Norms', sans-serif;
+  font-size: 1.85rem;
+  outline: none;
+  box-sizing: border-box;
+  letter-spacing: -0.01em;
+}
+
+.contact_form .input_group input::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.contact_form .input_group_file_upload label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+  background: transparent !important;
+  padding: 0.85rem 0 !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-family: 'TT Norms', sans-serif;
+  font-size: 1.85rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  letter-spacing: -0.01em;
+}
+
+.contact_form .plus_icon {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.contact_form .input_group_file_upload input[type="file"] {
+  display: none !important;
+}
+
+.contact_form .btn_submit {
+  background: #ffffff !important;
+  color: #5D59F0 !important;
+  border: none !important;
+  padding: 1.25rem 4.5rem !important;
+  border-radius: 0.625rem !important;
+  font-family: 'TT Norms', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.875rem;
+  align-self: flex-start;
+  width: auto !important;
+  height: auto !important;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+  .contact_section {
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .contact_header {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .title_area,
+  .info_area {
+    width: 100%;
+  }
+
+  .title_area h1 {
+    font-size: 4.5rem;
+  }
+
+  .form_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form_column {
+    grid-template-rows: auto;
+    row-gap: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .form_column .input_group_file_upload {
+    grid-row: auto;
+  }
+}
+/* Div 6 End */
+/* Footer Start */
+
+.main_footer {
+  width: 100vw;
+  max-width: 116.25rem;
+  height: 56.4vh;
+  margin: 16.375rem auto 0;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  border-top: 0.063rem solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer_content_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 24.688rem;
+  height: 18.625rem;
+}
+
+.offices_block {
+  display: flex;
+  flex-direction: column;
+  width: 24.375rem;
+  height: 17.688rem;
+}
+
+.services_block {
+  display: flex;
+  flex-direction: column;
+  width: 14.438rem;
+  height: 22.688rem;
+  justify-content: space-between;
+}
+
+.column_title {
+  text-transform: lowercase;
+  color: #888;
+  font-weight: 600;
+  margin: 0 0 1.25rem 0;
+  font-size: 0.95rem;
+}
+
+.footer_email {
+  color: #2E2BD0;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.office_location {
+  margin-bottom: 1rem;
+}
+
+.office_location a {
+  color: #2E2BD0;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.office_detail {
+  color: #666;
+  font-size: 0.875rem;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.4;
+}
+
+.services_block a {
+  text-decoration: none;
+  color: #2e2bd0;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.social_icons {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.social_icons svg {
+  width: 2.813rem;
+  height: 2.813rem;
+  cursor: pointer;
+  border: 0.08rem solid #2E2BD0;
+  border-radius: 0.625rem;
+  padding: 0.313rem;
+  box-sizing: border-box;
+}
+
+.footer_contact_btn {
+  background-color: #2E2BD0;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
+}
+
+.footer_contact_btn:hover {
+  opacity: 0.9;
+}
+
+.copyright_block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.063rem solid #e0e0e0;
+  padding-top: 1.5rem;
+  color: #888;
+}
+
+.copyright_block p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Footer End */
+
+/* Matas End */
