@@ -170,7 +170,7 @@ header::before {
   position: absolute;
   inset: 0;
   background: rgba(47, 53, 63, 0.40);
-  z-index: 1;
+  z-index: -1;
 }
 
 header>* {
@@ -1728,6 +1728,167 @@ a {
     grid-row: auto;
   }
 }
+
+/* Div 5 end */
+/* Div 6 Start */
+.contact_section {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 116.25rem;
+  height: 62.75rem;
+  background: #5D59F0;
+  border-radius: 2.5rem;
+  padding: 7.05rem 6.25rem 5.5rem 6.65rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_section .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.contact_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.title_area {
+  width: 44rem;
+  margin-left: 0rem;
+}
+
+.title_area h1 {
+  font-family: 'Neue Machina', sans-serif;
+  font-size: 6.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.info_area {
+  width: 43.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.85rem;
+  margin-top: 0.15rem;
+  margin-left: -0.15rem;
+}
+
+.info_area p {
+  font-family: 'TT Norms', sans-serif;
+  font-size: 1.65rem;
+  line-height: 1.45;
+  color: #ffffff;
+  opacity: 0.8;
+  letter-spacing: -0.01em;
+}
+
+.info_email {
+  color: #ffffff;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.btn_download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: flex-start;
+  margin-top: 0.15rem;
+  margin-left: 0rem;
+  padding: 0.95rem 2.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.625rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'TT Norms', sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn_download:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.contact_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10.25rem;
+  width: 100%;
+  margin-bottom: 3.5rem;
+  margin-top: 1.25rem;
+}
+
+.form_column {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 3.5rem;
+  width: 100%;
+}
+
+.contact_form .input_group,
+.contact_form .input_group_file_upload {
+  width: 100%;
+  margin: 0 !important;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.form_column .input_group_file_upload {
+  grid-row: 2;
+}
+
+.contact_form .input_group input {
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+  padding: 0.85rem 0 !important;
+  color: #ffffff !important;
+  font-family: 'TT Norms', sans-serif;
+  font-size: 1.85rem;
+  outline: none;
+  box-sizing: border-box;
+  letter-spacing: -0.01em;
+}
+
+.contact_form .input_group input::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.contact_form .input_group_file_upload label {
+  width: 100%;
+  width: 100%;
+  height: 99vh;
+  background-image: url(../IMG/HEADER/Img.png);
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
 
 /* Div 6 End */
 /* Footer Start */
